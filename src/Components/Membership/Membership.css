@@ -1,0 +1,45 @@
+.member{
+    margin: 80px;
+}
+.img-tittle{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+    font-size: 60px;
+}
+.circle-membership{
+    color: white;
+    line-height: 2;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+    font-weight: bold;
+}
+.firstForm-inquire{
+    margin: auto;
+}
+.inputs-Inquire{
+    margin: auto;
+    width: 60%;
+}
+.inputInquiry{
+    margin: 10px 40px;
+}
+.container .card{
+ margin-top: 50px;
+ margin-bottom: 20px;
+ -webkit-box-shadow: -4px 8px 13px 5px #A2A2A2; 
+    box-shadow: -4px 8px 13px 5px #A2A2A2;
+}
+.container .border-secondary{
+    /* width: 40%; */
+}
+.container .border-secondary ul li{
+    font-weight: bold;
+    line-height: 2;
+    font-size: 15px;
+}

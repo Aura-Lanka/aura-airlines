@@ -1,0 +1,17 @@
+.butt-on{
+    margin: 30px 0px 30px 0px ;
+    text-align: center;
+}
+
+.edit-margin label{
+    font-family: 'Times New Roman', Times, serif;
+}
+.newsletter{
+  border: 2px solid black;
+  margin-top: 50px;
+}
+.contact1{
+    border: 2px solid black;
+    padding: 40px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,587 @@
+* {
+    overflow-x: hidden;
+}
+
+p {
+    text-align: justify;
+    /* padding: 0px 10px 10px 10px; */
+}
+.quick-links li p a {
+    color: #fff;
+    text-decoration: underline;
+}
+.quick-links li p a:hover{
+    color: #5BC0F8;
+}
+.btn-floating {
+    color: white;
+}
+.btn-floating:hover{
+    color: #5BC0F8;
+}
+
+.borber{
+    margin: 20px 90px;
+}
+.services{
+    margin: 20px
+}
+
+    .row-edit {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .tittle {
+        font-family: 'gotham-black';
+    }
+
+    .firstInput {
+        margin-right: 10px;
+        width: 20%;
+        padding: 1em;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, .12);
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+
+    }
+
+    .lastInput {
+        margin-right: 10px;
+        width: 20%;
+        padding: 1em;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, .12);
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+    }
+
+    .emailInput {
+        margin-right: 10px;
+        width: 20%;
+        padding: 1em;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, .12);
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+    }
+
+    .buttonInput {
+        /* width: 20% ; */
+        padding: 12px;
+        /* background: #fff; */
+        border: 2px solid;
+        font-size: 15px;
+        font-family: "eurostile-condensed"; 
+        color: royalblue;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .buttonInput:hover {
+        background-color: royalblue;
+        color: white;
+        border: 2px solid;
+    }
+
+    .p {
+        margin: 28px 0;
+        padding: 0;
+        font-size: 13px !important;
+        line-height: normal;
+        color: #525252;
+        letter-spacing: 1px;
+    }
+
+    .mail {
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .navFooter {
+        color: black;
+        font: 1em sans-serif;
+        font-size: 18px !important;
+        letter-spacing: 2px;
+    }
+
+    .navFooter:hover {
+        color: #525252;
+    }
+
+    .main-heading {
+        font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.02em !important;
+        text-align: center;
+        margin: 13px 0px 13px 0px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        color: white;
+        left: 50%;
+        top: 5%;
+        z-index: 1;
+    }
+
+    .sm-heading {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-weight: 700 !important;
+        margin: 50px 0px 50px 0px;
+    }
+
+    label {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 0em;
+        line-height: 1.6em;
+    }
+
+    .book-part {
+        margin: auto;
+        width: 72%;
+    }
+
+    .b-Input {
+        padding: 0.5em;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, .12);
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .edit-margin {
+        margin-top: 30px;
+    }
+    
+    .text-part {
+        margin: 100px 0px 100px 0px;
+    }
+    /* ------About */
+  .About{
+  overflow: hidden;
+  }
+
+    .descirition {
+        margin-top: 80px;
+    }
+
+    .desciritionText-about3 {
+        font-family: monospace;
+        text-align: center;
+        font-size: 50px;
+        letter-spacing: 1.3px;
+        margin-top: 55px;
+        padding: 4px;
+    }
+
+    .desciritionColor-about {
+        background-color: #5BC0F8;
+        margin: 100px;
+        padding-bottom: 30px;
+    }
+
+    .descirition5-about {
+        text-align: center;
+        font: small-caps bold 35px/5 sans-serif;
+    }
+
+    .descirition {
+        margin-top: 80px;
+    }
+
+    .descirition5-about {
+        text-align: center;
+        font: small-caps bold 35px/5 sans-serif;
+    }
+
+
+    /* -----Inquire */
+    .Inquire {
+        overflow: hidden;
+        /* margin: 80px; */
+    }
+
+    .phone-inquire {
+        /* padding-top: 20px; */
+        font: small-caps bold 20px/1 sans-serif;
+    }
+
+    .phoneNo-inquire {
+        font: italic small-caps bold 18px/0 cursive;
+    }
+
+    .email-inquire {
+        padding-top: 50px;
+        font: small-caps bold 20px/1 sans-serif;
+    }
+
+    .emailName-inquire {
+        font: italic small-caps bold 18px/0 cursive;
+    }
+
+    .Immediate {
+        font-family: "Playfair Display", serif;
+        margin: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .headinng-Inquire {
+        text-align: center;
+        padding-top: 50px;
+        font: small-caps bold 42px/1 sans-serif;
+    }
+
+    .inputs-Inquire {
+        border: 2px solid black;
+    }
+
+    .firstInput-Inquire {
+        margin-right: 10px;
+        width: 40%;
+        padding: 1em;
+        margin-left: 40px;
+        background: #fff;
+        border: 1px solid black;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+    }
+
+    .lastInput-Inquire {
+        width: 40%;
+        padding: 1em;
+        margin-left: 20px;
+        background: #fff;
+        border: 1px solid black;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+        margin-bottom: 40px;
+    }
+
+    .emailInput-Inquire {
+        margin-right: 10px;
+        width: 85%;
+        padding: 1em;
+        margin-left: 43px;
+        background: #fff;
+        border: 1px solid black;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+    }
+
+    .messageInput-Inquire {
+        margin-right: 10px;
+        width: 85%;
+        padding: 10px;
+        margin-left: 50px;
+        background: #fff;
+        border: 1px solid black;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+        margin-bottom: 40px;
+    }
+
+    .emailInput-Inquire {
+        margin-right: 10px;
+        width: 85%;
+        padding: 1em;
+        margin-left: 43px;
+        background: #fff;
+        border: 1px solid black;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+    }
+
+    .name-Inquire {
+
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .reached-inquire {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+    .button-inquire {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .buttonin-inquire:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .buttonin-inquire {
+        width: 15%;
+        padding: 12px;
+        background: #fff;
+        border: 2px solid;
+        font-size: 15px;
+        font-family: "eurostile-condensed";
+        border-radius: 5px;
+    }
+
+    .headinng0-Inquire {
+        text-align: center;
+        padding-top: 30px;
+        font: small-caps bold 24px/1 sans-serif;
+    }
+
+    .firstForm-inquire {
+        background-color: #FCFCFC;
+    }
+
+
+    /* --------membership */
+    .Membership {
+        overflow: hidden;
+    }
+
+    .button-img2 {
+        transform: translate(500px, 100px);
+        background-color: rgb(97, 180, 228);
+        color: rgb(240, 244, 247);
+        width: 15%;
+    }
+
+
+    .button-img2 {
+        /* transform: translate(500px, 100px); */
+        background-color: rgb(97, 180, 228);
+        color: rgb(240, 244, 247);
+        width: 15%;
+    }
+
+    /* ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: '✓';
+} */
+
+
+    .desciritionText-Membership {
+        font-family: 'gotham-black';
+        font-size: 70px;
+        line-height: normal;
+        color: #525252;
+        text-align: center;
+        padding: 35px;
+    }
+
+    .desciritionTextb-Membership {
+        margin-left: 12px;
+        border: 2px solid;
+        width: 45%;
+        height: 500px;
+    }
+
+    .hometown {
+        padding-top: 50px;
+        padding-left: 35px;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        /* font: small-caps bold 20px/1 sans-serif; */
+        padding-bottom: 20px;
+    }
+
+    .countryInput {
+        margin-right: 10px;
+        width: 83%;
+        padding: 3px;
+        background: #fff;
+        border: 1px solid black;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+    }
+
+    .emptyInput {
+        margin-right: 10px;
+        width: 85%;
+        padding: 3px;
+        margin-left: 43px;
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid black;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: normal;
+        outline: none;
+    }
+
+    .circle-membership {
+        border-radius: 25px;
+        border: 2px #525252;
+    }
+
+    /* Destination */
+        .button-img3 {
+            /* transform: translate(580px, 50px); */
+            background-color: #3b3432;
+            color: rgb(240, 244, 247);
+            width: 15%;
+        }
+
+        .Destination {
+            overflow: hidden;
+        }
+
+        .article-destination {
+            margin-left: 150px;
+            margin-top: 30px;
+        }
+
+        .all-article {
+            text-align: center;
+            /* background-color: #5BC0F8; */
+        }
+
+        /* footer */
+
+            footer.page-footer {
+
+                color: #fff;
+            }
+
+
+            .mdb-color {
+                background-color: #181818 !important;
+            }
+
+            .icon-size {
+                padding-right: 10px;
+                font-size: 22px;
+
+            }
+
+            @media(max-width:576px) {
+                .all-article {
+                    padding-right: 120px;
+                }
+                .desciritionTextb-Membership{
+                    margin-bottom: 20px;
+                    width: 90%;
+                    height: 350px;
+                }
+
+                .desciritionText-Membership {
+                    padding: auto;
+                    font-size: 35px;
+                }
+                .desciritionColor-about{
+                    margin: auto;
+                }
+                .descirition5-about{
+                    font-size: 15px;
+                    font-weight: bolder;
+                }
+                .firstInput-Inquire{
+                    margin-left: 50px;
+                    width: 50%;
+                }
+                .lastInput-Inquire{
+                    width: 50%;
+                    margin-left: 50px;
+
+                }
+                .emailInput-Inquire{
+                    width: 70%;
+                }
+                .reached-inquire {
+                    margin: 8px 15px;
+                }
+                .countryInput{
+                    width: auto;
+                }
+                .emptyInput{
+                    width: auto;
+                }
+                .buttonin-inquire{
+                    width: auto;
+                    margin: auto;
+                }
+                .headinng-Inquire{
+                    font-size: 30px;
+                }
+                .border-secondary{
+                    margin: auto;
+                }
+                .messageInput-Inquire{
+                    width: 70%;
+                }
+                .firstForm-inquire {
+                    width: auto;
+                }
+                .inputs-Inquire{
+                    padding: auto;
+                    margin: auto;
+                    width: 100%;
+                }
+                .Immediate{
+                    font-size: 25px;
+                    margin: 5px 0px 15px 0px;
+                }
+                .buttonInput{
+                    width: auto;
+                }
+               .img-tittle{
+                position: static;
+                /* font-size: 5px; */
+                text-align: center;
+                margin-top: 90px;
+               }
+               .container .border-secondary{
+                width: 82%;
+               }
+               .destin .img-tittle {
+                position: static;
+                text-align: center;
+                margin-top: 140px;
+                margin-left: 50px;
+                }
+                .img-title h1{
+                position: static;
+                text-align: center;
+                font-size: 5px;
+                margin-top: 140px;
+                margin-left: 100px;
+                }
+
+}

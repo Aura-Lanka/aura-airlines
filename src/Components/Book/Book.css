@@ -1,0 +1,32 @@
+*{
+        overflow-x: hidden;
+}
+.round-edit{
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    padding-top:50px;
+    padding-bottom:50px;
+    
+}
+.round-img{
+    border-radius: 50%;
+    width: 80%;
+    height: 85%;
+    clear: both;
+}
+.video-edit{
+    width: 90%;
+    margin: auto;
+}
+h5{
+    font-size: 1.25rem;
+    padding: 2px;
+}
+.flight{
+    margin: auto;
+    width: 58%;
+    border: 2px solid black;
+    padding: 30px 40px 10px 40px;
+    /* margin-right: 0px; */
+}
