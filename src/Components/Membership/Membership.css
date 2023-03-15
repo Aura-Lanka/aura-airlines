@@ -1,0 +1,120 @@
+.member{
+    margin: 80px;
+}
+.img-tittle{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+    font-size: 60px;
+}
+.circle-membership{
+    color: white;
+    line-height: 2;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+    font-weight: bold;
+}
+.firstForm-inquire{
+    margin: auto;
+}
+.inputs-Inquire{
+    margin: auto;
+    width: 60%;
+    /*background-color: aqua;*/
+}
+.inputInquiry{
+    margin: 10px 40px;
+    /*background-color: aqua;*/
+}
+.container .card{
+ margin-top: 50px;
+ margin-bottom: 20px;
+ -webkit-box-shadow: -4px 8px 13px 5px #A2A2A2; 
+    box-shadow: -4px 8px 13px 5px #A2A2A2;
+}
+.container .border-secondary{
+    /* width: 40%; */
+}
+.container .border-secondary ul li{
+    font-weight: bold;
+    line-height: 2;
+    font-size: 15px;
+}
+.memberShip{
+    max-width: 990px;
+    margin:2em auto;
+    /*background-color: blue;*/
+}
+.buttonin-inquire{
+    padding: 15px 32px;
+}
+
+@media screen and (max-width: 568px) {
+    .img-tittle{
+        position: absolute;
+        white-space: nowrap;
+        top: 1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+        font-size: 30px;
+    }
+    .desciritionTextb-Membership{
+        width: 323px;
+        height: 175px;
+        /*padding-top: 1px;
+        padding-right: 20px;*/
+    }
+
+    .inputs-Inquire{
+        margin: auto;
+        width: 95%;
+        /*background-color: aqua;*/
+    }
+    .memberShip{
+        max-width: 990px;
+        margin:2em auto;
+        /*background-color: blue;*/
+    }
+    .desciritionText-Membership{
+        font-size: 30px;
+        /*background-color: blueviolet;*/
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .name-Inquire{
+        font-size: 15px;
+    }
+    .reached-inquire{
+        font-size: 15px;
+    }
+    .hometown{
+        font-size: 15px;
+    }
+    .countryInput{
+        padding: 8px 15px;
+    }
+    .firstInput-Inquire{
+        padding: 8px 28px;
+    }
+    .lastInput-Inquire{
+        padding: 8px 28px;
+    }
+    .emailInput-Inquire{
+        padding: 8px 28px;
+    }
+    .reached-inquire{
+        padding: 8px 28px;
+    }
+    .emptyInput{
+        padding: 8px 28px;
+    }
+    .buttonin-inquire{
+        padding: 8px 28px;
+    }
+}

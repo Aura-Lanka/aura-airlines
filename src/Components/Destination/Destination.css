@@ -1,0 +1,37 @@
+.destin{
+    position: relative;
+}
+.destin .tittle-about{
+    position: absolute;
+    top: 7%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: BLACK;
+    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+    font-size: 40px;
+
+}
+.destin .img-tittle{
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+    font-size: 45px;
+    line-height: 1.5;
+}
+.all-article h4{
+    color: black;
+}
+
+@media screen and (max-width: 568px) {
+    .img-tittle{
+        position: absolute;
+        /*white-space: nowrap;*/
+        top: 2% !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+        font-size: 30px !important;
+    }
+}

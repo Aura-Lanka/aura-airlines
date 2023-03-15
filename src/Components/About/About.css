@@ -1,0 +1,44 @@
+  /* ------About */
+.About{
+    overflow: hidden;
+}
+
+.margin {
+    margin: 100px;
+}
+.margin1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.img-title{
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.img-title h1{
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+}
+
+.we-core {
+    font: italic small-caps bold 32px cursive;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 568px) {
+    .img-title{
+        top: 15%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    .img-title h1{
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+    }
+    .margin1{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+}
