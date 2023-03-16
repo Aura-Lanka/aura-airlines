@@ -68,7 +68,7 @@ function Membership() {
       <div className="member">       
    
         <div className='row descirition mb-5'>
-    <div className='col-md-6 desciritionTextb-Membership'>
+    <div className='col-md-6 desciritionTextb-Membership; text-center'>
         <p className='desciritionText-Membership' >Membership has it's  Privileges & Last for an Eternity.</p>
     </div>
     <div className='col-md-6'>

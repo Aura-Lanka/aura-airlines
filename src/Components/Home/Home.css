@@ -42,6 +42,39 @@
   width:'100%';
 }*/
 
+
+@media screen and (max-width: 1281px) {
+  .tittle-welcome {
+      position: absolute;
+      color: white;
+      white-space: nowrap;
+      /*background-color: blueviolet;*/
+      text-shadow: 5px 5px 4px black;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+      font-size: 60px;
+      line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tittle-welcome {
+      position: absolute;
+      color: white;
+      white-space: nowrap;
+      /*background-color: blueviolet;*/
+      text-shadow: 5px 5px 4px black;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+      font-size: 40px;
+      line-height: 1.5;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .tittle-welcome {
       position: absolute;
@@ -57,3 +90,4 @@
       line-height: 1.5;
   }
 }
+

@@ -145,7 +145,7 @@ function Home() {
                 </div>
                 <div className="col-md-5 marg mx-3">
                     <img
-                        className="d-block w-100 h-100"
+                        className="d-block w-100"
                         src="https://images.unsplash.com/photo-1566822777822-0b43388beaba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                         alt=""
                     />
