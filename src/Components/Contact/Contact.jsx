@@ -145,24 +145,24 @@ function Contact() {
                             </p>
                         </div>
                         <div className="col-md-6">
-                        <form onSubmit={sendEmail}>
+                <form onSubmit={sendEmail}>
 
-                            <div className='edit-margin'>
-                                <label>Name</label><br />
-                                <input  className="b-Input w-100" name='to_name' type="text" />
-                            </div>
+                <div className='edit-margin'>
+                    <label>Name</label><br />
+                    <input  className="b-Input w-100" name='to_name' type="text" />
+                </div>
 
-                            <div className='edit-margin'>
-                                <label >Email Address</label><br />
-                                <input className="b-Input w-100" name='email' type="email" />
-                            </div>
+                <div className='edit-margin'>
+                    <label >Email Address</label><br />
+                    <input className="b-Input w-100" name='email' type="email" />
+                </div>
 
-                            <div className='butt-on'>
-                                <button className='buttonInput '>Subscribe</button>
-                            </div>
-                        </form>
-                        </div>
-                    </div>
+                <div className='butt-on'>
+                    <button className='buttonInput '>Subscribe</button>
+                </div>
+                </form>
+                </div>
+                </div>
                 </div>
                 
             </div>

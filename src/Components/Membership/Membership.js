@@ -83,53 +83,75 @@ function Membership() {
         <div className="inputs-Inquire">
         <div className="inputInquiry form-inline">
           <form onSubmit={sendMembership} className="memberShip">
-          <h5 className="name-Inquire mt-3 ">Name *</h5>
-         
+          {/*<h5 className="name-Inquire mt-3 ">Name *</h5>*/}
+          <label>First Name*</label><br />
           <input
-            className="firstInput-Inquire my-3 "
+            className="b-Input w-100"
             type="text"
             name="first_name"
-            placeholder="First Name"
           />
+          <br /><br />
+          <label>Last Name*</label><br />
           <input
-            className="lastInput-Inquire"
+            className="b-Input w-100"
             type="text"
             name="last_name"
-            placeholder="Last Name"
           />
           <br />
+          {/*
           <h5 className="name-Inquire">Email Address *</h5>
           <input className="emailInput-Inquire" name='email' type="text" placeholder="" />
-          <br />
-          <h5 className="name-Inquire pt-5">Contact Number *</h5>
+          <br />*/}
+
+          <div className="col-md-6">
+            <div className='edit-margin'>
+              <label >Email Address*</label><br />
+              <input  className='b-Input w-100' name='email' type="email" required />
+            </div>
+          </div>
+
+          <div className="col-md-6">
+            <div className='edit-margin'>
+              <label >Contect Number*</label><br />
+              <input  className='b-Input w-100' name='contact' type="text" required />
+            </div>
+          </div>
+
+          {/*<h5 className="name-Inquire pt-5">Contact Number *</h5>
           <input className="emailInput-Inquire" type="text" name='contact_number' placeholder="" required />
           <br />
-          <br />
+          <br />*/}
        
+          <div className="mt-5">
+          <label >How Do You Wish To Be Reached?*</label><br />
+            <label className="px-3"><input type="radio" className="mx-2" />Call us</label>
+            <label className="px-3"><input type="radio" className="mx-2 " />Email us</label>
 
-          <p className="reached-inquire p-1">How Do You Wish To Be Reached? *</p>
-          <select className="reached-inquire p-1" name="reached" id="">
-            <option value="call us">call us </option>
-            <option value="email">email</option>
-          </select>
+          <div className="col-md-6">
+            <div className='edit-margin'>
+              <label >Hometown</label><br />
+              <input  className='b-Input w-100' name='homeTown' type="text" required />
+            </div>
+          </div>
 
-          <br />
-          <h6 className="hometown">Hometown</h6>
-          <select className="reached-inquire" name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-            <input className="countryInput" type="text" placeholder="" />
-            <p className="reached-inquire pt-5 p-1">How often do you travel?</p>
-            <input className="emptyInput" type="text" placeholder="" />
-            <p className="reached-inquire p-1">What benefits of Membership are you most interested in?</p>
-            <input className="emptyInput" type="text" placeholder="" />
+          <div className="col-md-6">
+            <div className='edit-margin'>
+              <label >How often do you travel?</label><br />
+              <input  className='b-Input w-100' name='oftenTravel' type="text" required />
+            </div>
+          </div>
 
-          <div className=" button-inquire">
-          <button className="buttonin-inquire" >Send</button>
+          <div className="col-md-6">
+            <div className='edit-margin'>
+              <label >What benefits of Membership are you most interested in?</label><br />
+              {/*<input  className='b-Input w-100' name='benefit' type="text" required />*/}
+              <textarea  className="b-Input w-100" name='message' cols="30" rows="10" required></textarea>
+            </div>
+          </div>
+
+          <div className='butt-on mt-5'>
+            <button className='buttonInput' type="submit" >Send</button>
+          </div> 
           </div>
           </form>
         </div>
@@ -147,6 +169,7 @@ function Membership() {
           <br />
           <h5 className="name-Inquire pt-3">Email Address *</h5>
           <input className="emailInput-Inquire"  name='email' type="text" placeholder="" />
+          
           <div className="button-inquire">
           <button className="buttonin-inquire"> Subscribe </button>
           {/* <input className="button buttonin-inquire" type='submit' value="Subscribe"></input> */}

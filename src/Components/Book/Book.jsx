@@ -1,10 +1,51 @@
-import React , {useEffect,useRef} from "react";
+import React , {useEffect,useRef, useState} from "react";
+import Axios from 'axios';
 import "./Book.css";
 import Footer from "../Footer/Footer";
 import emailjs from 'emailjs-com';
 
 
 function Book() {
+    const url = "https://auraairline.com/aura_airlines/CustomerInquiryDetails"
+    const [data, setData] = useState({
+        first_name:"",
+        last_name:"",
+        phone_number:"",
+        email:"",
+        oneWay:"",
+        roundTrip:"",
+        date:"",
+        departure_city:"",
+        destination_city:"",
+        passengers:""
+    })
+
+    function submit(e){
+        e.preventDefault();
+        Axios.post(url,{
+            first_name:data.first_name,
+            last_name:data.last_name,
+            phone_number:data.phone_number,
+            email:data.email,
+            oneWay:data.oneWay,
+            roundTrip:data.roundTrip,
+            date:data.date,
+            departure_city:data.departure_city,
+            destination_city:data.destination_city,
+            passengers:data.passengers 
+        })
+            .then(res=>{
+                console.log(res.data)
+            })
+    }
+
+    function handle(e){
+        const newdata={...data}
+        newdata[e.target.id] = e.target.value
+        setData(newdata)
+        console.log(newdata)
+    }
+
     const topContainer = useRef();
     useEffect(() => {
       topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
@@ -33,48 +74,56 @@ function Book() {
                     <source src="https://www.youtube.com/watch?v=ZbIzZD_YNsA" type="video/ogg"/>
                         Your browser does not support the video tag.
                 </video> */}
-                <iframe width="100%" height="460" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
+                <iframe width="100%" height="460" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
                 <h3 className="sm-heading">Tells Us Your Travel Plans</h3>
                 
-                <div className="container flight">
+                <div className="book-part contact1">
                 <h5>Personal Information</h5><br />
-                    <form onSubmit={sendEmail} >
+                    <form onSubmit={(e)=> submit(e)}>
                         <label>Name</label>
                         <div className="row ">
                             <div className="col-md-6">
-                                <input type="text" name="first_name" className="b-Input w-100" placeholder="First Name " />
+                                <input onChange={(e)=>handle(e)} id="first_name" value={data.first_name} 
+                                type="text" name="first_name" className="b-Input w-100" placeholder="First Name " required/>
                             </div>
                             <div className="col-md-6">
-                                <input type="text" name="last_name" className="b-Input w-100" placeholder="Last Name " />
+                                <input onChange={(e)=>handle(e)} id="last_name" value={data.last_name} 
+                                type="text" name="last_name" className="b-Input w-100" placeholder="Last Name " required/>
                             </div>
                         </div>
 
                         <div className="edit-margin">
                             <label>Phone Number</label><br />
-                            <input type="tel" className="b-Input w-100" placeholder="+923+++++++++" />
+                            <input onChange={(e)=>handle(e)} id="phone_number" value={data.phone_number} 
+                            type="tel" name="phone_number" className="b-Input w-100" placeholder="+94+++++++++" required/>
                         </div>
 
                         <div className="edit-margin">
                             <label>Email Address</label><br />
-                            <input type="text" email='email' name="email" className="b-Input w-100" placeholder="John@gmail.com" />
+                            <input onChange={(e)=>handle(e)} id="email" value={data.email}
+                            type="text" email='email' name="email" className="b-Input w-100" placeholder="John@gmail.com" required/>
                         </div>
                     
                     <div className="mt-5">
                     <h5>Flight Information</h5><br />
-                        <label className="px-3"><input type="radio" className="mx-2" />One Way</label>
+                        <label className="px-3"><input onChange={(e)=>handle(e)} id="oneWay" for ="oneWay" value={data.oneWay}
+                        type="radio" className="mx-2" name="flightInfo" required/>One Way</label>
 
-                        <label className="px-3"><input type="radio" className="mx-2 " />Round Trip</label>
+                        <label className="px-3"><input onChange={(e)=>handle(e)} id="roundTrip" for ="roundTrip" value={data.roundTrip}
+                        type="radio" className="mx-2 " name="flightInfo" required/>Round Trip</label>
 
                         <div className="edit-margin">
                             <label>Date of Departure</label><br />
-                            <input name="date" type="date" className="b-Input w-50" />
+                            <input onChange={(e)=>handle(e)} id="date" value={data.date}
+                            name="date" type="date" className="b-Input w-50" required/>
                         </div>
 
                         <div className="edit-margin">
                             <label>Departure City</label><br />
-                            <select name="departure_city" className="b-Input w-50">
+                            <select onChange={(e)=>handle(e)} id="departure_city" value={data.departure_city}
+                            name="departure_city" className="b-Input w-50" required>
+                                <option>Please Select</option>
                                 <option>Galle</option>
                                 <option>Tangalle</option>
                                 <option>Koggala</option>
@@ -97,7 +146,9 @@ function Book() {
 
                         <div className="edit-margin">
                             <label>Destination City</label><br />
-                            <select name="destination_city" className="b-Input w-50">
+                            <select onChange={(e)=>handle(e)} id="destination_city" value={data.destination_city}
+                            name="destination_city" className="b-Input w-50" required>
+                                <option>Please Select</option>
                                 <option>Galle</option>
                                 <option>Tangalle</option>
                                 <option>Koggala</option>
@@ -135,7 +186,8 @@ function Book() {
 
                         <div className="edit-margin">
                             <label>No of Passengers</label><br />
-                            <input  name='passengers' type="number" className="b-Input" placeholder="0" />
+                            <input onChange={(e)=>handle(e)} id="passengers" value={data.passengers}
+                            name='passengers' type="number" className="b-Input" placeholder="0" required/>
                         </div>
                         <div className='butt-on mt-5'>
                         <button className='buttonInput' type="submit" >Submit</button>

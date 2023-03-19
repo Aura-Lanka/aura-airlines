@@ -98,7 +98,7 @@ function Home() {
                         className="d-block w-100"
                         src="https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?b=1&s=170667a&w=0&k=20&c=F3PSMzB2x-pI-ctwUEGTY4jvnRYIi3PgCheBiCu8Y7Q="
                         alt=""
-                    />
+                    /><br />
                 </div>
                 <div className="col-md-5 mx-3 my-auto">
                     <p>
