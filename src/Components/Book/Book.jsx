@@ -47,9 +47,20 @@ function Book() {
     }
 
     const topContainer = useRef();
-    useEffect(() => {
+    {/*useEffect(() => {
       topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
-      }, []);
+      }, []);*/}
+
+    useEffect(() => {
+        Axios.get('https://auraairline.com/aura_airlines/CustomerInquiryDetails')
+
+        .then(response => {
+            console.log(response);
+      })
+        .catch(error => {
+            console.error(error);
+      });
+        }, []); 
 
     const sendEmail = (e) => {
         e.preventDefault();

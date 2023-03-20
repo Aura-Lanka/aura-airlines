@@ -16,6 +16,7 @@ import Inquire from './Components/Inquire/Inquire';
 
 
 function App() {
+
   return (
     <>
       <Router>

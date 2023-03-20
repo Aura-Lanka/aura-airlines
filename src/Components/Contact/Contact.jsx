@@ -2,6 +2,7 @@ import React , {useEffect,useRef} from "react";
 import './Contact.css';
 import Footer from "../Footer/Footer";
 import emailjs from 'emailjs-com';
+import { Link } from "react-router-dom";
 
 function Contact() {
     const topContainer = useRef();
@@ -134,6 +135,13 @@ function Contact() {
                         </div>
                     </form>
 
+                </div>
+
+                <div className="container">
+                <h3 className='sm-heading'>Want Some Assitance...!</h3>
+                <li className="nav-item edit text-center" >
+                    <Link className="nav-link nav-link-color" aria-current="page" to="/Inquire">Inquire Now</Link>
+                </li>
                 </div>
 
                 <div className="container">

@@ -62,9 +62,10 @@ function Navbar() {
                             <li className="nav-item edit">
                                 <Link className="nav-link nav-link-color" aria-current="page" to="/Offers">Offers</Link>
                             </li>
+                            {/*
                             <li className="nav-item edit">
                                 <Link className="nav-link nav-link-color" aria-current="page" to="/Inquire">Inquire</Link>
-                            </li>
+                            </li>*/}
                         </ul>
                         </form>
                     </div>
