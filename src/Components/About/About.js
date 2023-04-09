@@ -18,9 +18,9 @@ function About() {
 
         {/* <h1 className='tittle-about pb-3 mt-3 text-center'><b>About us</b></h1> */}
         <div className='margin1'>
-        <img width="100%" height="100%" src="https://media.vanityfair.com/photos/563d20b0ffe4c2a35a2a9145/master/pass/t-a-wing-and-a-prayer-us-airlines.jpg" alt="" />
+        <img width="100%" height="100%" src="./C01.png" alt="" />
         <div className='position-absolute img-title'>
-        <h1 className="p-2">Fly with <br/> Aura !!!</h1>
+        <h1 className="p-2">Let’s Get to Know About<br/> Aura Airlines</h1>
         </div>
         
         <div className="carousel-caption">

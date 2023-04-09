@@ -37,7 +37,7 @@ function Contact() {
       <div ref={topContainer}/>
             <div>
                 <div className='position-relative'>
-                <h1 className="main-heading">Contact Us</h1>
+                <h1 className="main-heading">Fly with Aura!</h1>
                 <div
                     id="carouselExampleControls"
                     className="carousel slide  carsouel1-edit"
@@ -46,28 +46,12 @@ function Contact() {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img
-                                src="https://i.ytimg.com/vi/maufDGFgCZo/maxresdefault.jpg"
+                                src="./contact.png"
                                 className="d-block w-100"
                                 alt="..."
                             />
                         </div>
-                        <div className="carousel-item active">
-                            <img
-                                src="https://i.pinimg.com/originals/23/ed/d8/23edd8ffb4cea75191489e1dc9c598f2.jpg"
-                                className="d-block w-100"
-                                alt="..."
-                            />
-                        </div>
-                        <div className="carousel-item active">
-                            <img
-                                src="https://wallpaperaccess.com/full/254381.jpg"
-                                className="d-block w-100"
-                                alt="..."
-                            />
-                            {/* <div class="carousel-caption d-none d-md-block">
-                                <button className="justify-content-center">book now</button>
-                            </div> */}
-                        </div>
+
                     </div>
                     <button
                         className="carousel-control-prev"
@@ -95,41 +79,50 @@ function Contact() {
                     </button>
                 </div>
                 </div>
-                <h3 className="sm-heading">We're with You Always</h3>
+                <h3 className="sm-heading text-primary fw-bold">We're with You Always</h3>
                 <div className='book-part contact1'>
                     <form onSubmit={sendEmailContact}>
                         <div className='row'>
-                            <div className='col-md-6'>
-                                <label>First Name*</label><br />
-                                <input className='b-Input w-100' name='first_name' type="text" required />
+
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label>First Name<em className="text-danger">*</em></label><br />
+                                    <input className='b-Input w-100' name='first_name' type="text" required />
+                                </div>
                             </div>
 
-                            <div className='col-md-6'>
-                                <label>Last Name*</label><br />
-                                <input  className='b-Input w-100' name='last_name'  type="text" required />
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label>Last Name<em className="text-danger">*</em></label><br />
+                                    <input  className='b-Input w-100' name='last_name'  type="text" required />
+                                </div>
                             </div>
+
                             
                             <div className="col-md-6">
                                 <div className='edit-margin'>
-                                    <label >Email Address*</label><br />
+                                    <label >Email Address<em className="text-danger">*</em></label><br />
                                     <input  className='b-Input w-100' name='email' type="email" required />
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className='edit-margin'>
-                                    <label>Subject*</label><br />
+                                    <label>Subject<em className="text-danger">*</em></label><br />
                                     <input  className='b-Input w-100' name='subject' type="text" required />
                                 </div>
                             </div>
+
                             <div className="col-md-6">
                                 <div className='edit-margin'>
-                                    <label >Message*</label><br />
+                                    <label >Message<em className="text-danger">*</em></label><br />
                                     <textarea  className="b-Input w-100" name='message' cols="30" rows="10" required></textarea>
                                 </div>
                             </div>
-                            <div className='butt-on'>
+                            <div className='edit-margin'>
+                                <div className='butt-on d-grid gap-2 col-4 mx-auto'>
                                     <button className='buttonInput'>Send</button>
+                                </div>
                             </div>
 
                         </div>
@@ -138,12 +131,13 @@ function Contact() {
                 </div>
 
                 <div className="container">
-                <h3 className='sm-heading'>Want Some Assitance...!</h3>
-                <li className="nav-item edit text-center" >
-                    <Link className="nav-link nav-link-color" aria-current="page" to="/Inquire">Inquire Now</Link>
-                </li>
+                    <h3 className='sm-heading text-primary fw-bold'>Want Some Assistance...?</h3>
+                    <div className='butt-on d-grid gap-2 col-3 mx-auto'>
+                        <button className='buttonInput'>Inquire Now</button>
+                    </div>
                 </div>
 
+                {/*
                 <div className="container">
                     <div className="row newsletter">
                         <div className="col-md-6 my-4">
@@ -172,6 +166,7 @@ function Contact() {
                 </div>
                 </div>
                 </div>
+                        */}
                 
             </div>
             <Footer/>

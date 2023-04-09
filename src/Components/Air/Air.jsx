@@ -16,22 +16,8 @@ function Home() {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img
-                                src="https://i.ytimg.com/vi/maufDGFgCZo/maxresdefault.jpg"
+                                src="./air.png"
                                 className="d-block w-100 h-75"
-                                alt="..."
-                            />
-                        </div>
-                        <div className="carousel-item active">
-                            <img
-                                src="https://i.pinimg.com/originals/23/ed/d8/23edd8ffb4cea75191489e1dc9c598f2.jpg"
-                                className="d-block w-100 h-75"
-                                alt="..."
-                            />
-                        </div>
-                        <div className="carousel-item active">
-                            <img
-                                src="https://wallpaperaccess.com/full/254381.jpg"
-                                className="d-block w-100"
                                 alt="..."
                             />
                         </div>

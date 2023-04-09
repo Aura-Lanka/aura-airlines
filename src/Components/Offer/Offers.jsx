@@ -25,24 +25,11 @@ function Offers() {
                 className="carousel slide  carsouel1-edit"
                 data-bs-ride="carousel"
             >
-                <div className="carousel-inner">
+                <div className="carousel-inner">         
+                    <h1 className="main-heading">Enjoy our Exclusive Offers</h1>
                     <div className="carousel-item active">
                         <img
-                            src="https://i.ytimg.com/vi/maufDGFgCZo/maxresdefault.jpg"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                    </div>
-                    <div className="carousel-item active">
-                        <img
-                            src="https://i.pinimg.com/originals/23/ed/d8/23edd8ffb4cea75191489e1dc9c598f2.jpg"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                    </div>
-                    <div className="carousel-item active">
-                        <img
-                            src="https://wallpaperaccess.com/full/254381.jpg"
+                            src="./offer.jpg"
                             className="d-block w-100"
                             alt="..."
                         />
@@ -74,23 +61,27 @@ function Offers() {
                 </button>
             </div>
 
-            <div className="book-part my-5">
-                <h3 className="book-heading"><b>Offers Are</b></h3>
-                <ul>
-                    <li>&#x2022; Solid for reduced rates</li>
-                    <li>&#x2022; Usually Offer when an Aircraft</li>
-                        <ul>
-                            <li >&rarr; is landing to pickup passengers</li>
-                            <li>&rarr;  has to flown empty back to its home</li>
-                        </ul>
-                    <li>&#x2022; Solely for the benfit of our clients</li>
-                </ul>
-            </div>
+            <h1 className="sm-heading text-primary fw-bold">Offers Are....!!</h1>
 
-            <div className="book-part">
+                <p className="text-center container text-part2">
+                    Solid for reduced rates
+                </p>
+
+                <p className="text-center container text-part2">
+                    Usually Offer when an Aircraft
+                    <li> Is landing to pickup passengers</li>
+                    <li>Has to flown empty back to its home</li>
+                </p>
+       
+                <p className="text-center container text-part2">
+                    Solely for the benfit of our clients
+                </p>
+        
+
+            <div className="book-part2">
                 <div className="table-responsive-sm text-center">
 
-                <table className="table text-center">
+                <table className="table table-bordered text-center">
                     <thead>
                         <tr>
                             <th className="text-center">Type</th>
@@ -103,7 +94,15 @@ function Offers() {
                         </tr>
                     </thead>
 
+
                     <tbody>
+
+                    <tr>
+                    <td colspan="7" class="table-active">Coming Soon!</td>
+                    </tr>
+
+                        {/*Table rows
+
                         <tr>
                             <td>a</td>
                             <td>5</td>
@@ -150,7 +149,10 @@ function Offers() {
                             <td>28.02.2023</td>
                             <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
                         </tr>
+
+                    rows end*/}
                     </tbody>
+                    
                 </table>
                 </div>
             </div>

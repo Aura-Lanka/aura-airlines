@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <>     
-            <nav className="navbar navbar-expand-lg bg-light fixed-top">
+            <nav className="navbar navbar-expand-lg bg-light">
                 <div className="container-fluid">
                     <Link className="navbar-brand brand-edit" to="/"><img className="logo-edit" src="./airlogo.png" alt="logo-name" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,9 @@ function Navbar() {
                                     <Link className="nav-link nav-link-color" aria-current="page" to="/Book">Book</Link>
                                 </li>
 
-                                <li className="nav-item">
+                                {/*<li className="nav-item">
                                     <Link className="nav-link nav-link-color" aria-current="page" to="/Air">Aircraft Guide</Link>
-                                </li>
-
+                                </li>*/}
 
             
                                 {/* <li className="nav-item dropdown">

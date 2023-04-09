@@ -18,7 +18,7 @@ function Destination() {
                 {/*<h1 className='tittle-about p-3 text-center'><b>DESTINATION</b></h1>*/}
                 <h1 className="img-tittle text-center p-1">Fly with Us to<br/>Amazing <br/> Destinations</h1>
                 <img
-                    src="https://wallpaper.dog/large/20522588.jpg"
+                    src="./destination.png"
                     alt=""
                     width="100%"
                     height="100%"

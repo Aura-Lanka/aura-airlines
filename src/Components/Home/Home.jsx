@@ -23,7 +23,7 @@ function Home() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img
-                            src="https://i.ytimg.com/vi/maufDGFgCZo/maxresdefault.jpg"
+                            src="./home_1.jpg"
                             className="d-block w-100"
                             alt="..."
                         />
@@ -31,7 +31,7 @@ function Home() {
                     </div>
                     <div className="carousel-item active">
                         <img
-                            src="https://i.pinimg.com/originals/23/ed/d8/23edd8ffb4cea75191489e1dc9c598f2.jpg"
+                            src="./home_2.png"
                             className="d-block w-100"
                             alt="..."
                         />
@@ -39,7 +39,7 @@ function Home() {
                     </div>
                     <div className="carousel-item active">
                         <img
-                            src="https://wallpaperaccess.com/full/254381.jpg"
+                            src="./home_3.png"
                             className="d-block w-100"
                             alt="..."
                         />
@@ -78,9 +78,9 @@ function Home() {
                     can benefit from in the fields of Leisure, Corporate and VIP transport solutions, and service for both domestic and international market.
 
                 </p>
-                <div className="row row-edit  text-center" >
+                <div className="row row-edit  text-center">
                     <div className="col-md-2 my-auto">
-                        <button className="buttonInput " type="submit" value="Subscribe">
+                        <button className="buttonInput " type="submit" value="Subscribe" >
                             Inquire Now
                         </button>
                     </div>
@@ -91,6 +91,15 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            {<div id="cards">
+                <div class="card">
+                    <div class="card-content">
+
+                    </div>
+                </div>
+        </div>}
+
             {/* 1 */}
             <div className="row row-edit my-5">
                 <div className="col-md-5 marg mx-3">
@@ -102,7 +111,7 @@ function Home() {
                 </div>
                 <div className="col-md-5 mx-3 my-auto">
                     <p>
-                        <h5>Our Services</h5>
+                        <h5 class="col-md-6 text-center text-primary">Our Services</h5>
                         <ul>
                             <li>&rarr; Corporate VIP/VVIP Client</li>
                             <li>&rarr; Passenger Charter</li>
@@ -121,13 +130,13 @@ function Home() {
                         </ul>
                     </p>
                 </div>
-            </div>
+            </div>              
 
             {/* 2 */}
-            <div className="row row-edit">
-                <div className="col-md-5 mx-3">
+            <div className="row row-edit my-5">
+                <div className="col-md-5 mx-3 my-auto">
                     <p>
-                        <h5>Why Aura Airlines Charter?</h5>
+                        <h5 class="col-md-5 text-center text-primary">Why Aura Airlines Charter</h5>
                         <ul>
                         &rarr; Island wide Coverage <br />
                         &rarr; Anytime, Anywhere <br />
@@ -136,7 +145,7 @@ function Home() {
                         &rarr;  Ensure Safety, Security and Privacy <br />
                         &rarr;  Full of Comfort, Luxury and Convenience <br />
                         &rarr;   To fly happily <br />
-                        &rarr;   Guaranteed customer satisfaction <br />
+                        &rarr;   Guaranteed Safety and Our Dedication <br />
                         &rarr;   Preeminent and Personalized Service <br />
 
 
@@ -162,7 +171,7 @@ function Home() {
                     />
                 </div>
                 <div className="col-md-5 mx-3 my-auto">
-                    <h5>Safety</h5>
+                    <h5 class="text-center text-primary">Safety</h5>
                     <p>
                     Aura Airlines considers safety as its prime consideration and therefore has implemented safety management systems (SMS) throughout our operation both horizontally and vertically.Highly experienced crew will provide extra support with safety ensuring health and personal welfare of our valuable clients.
 
@@ -173,7 +182,7 @@ function Home() {
             {/* 4 */}
             <div className="row row-edit my-5">
                 <div className="col-md-5 mx-3 my-auto">
-                    <h5>Dedication</h5>
+                    <h5 class="text-center text-primary">Dedication</h5>
                     <p>
                     Our product reflects and improves the quality of life with the mission 
                     of the airline to make air travel an integral part of the tourism industry
