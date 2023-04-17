@@ -92,116 +92,68 @@ function Home() {
                 </div>
             </div>
 
-            {<div id="cards">
-                <div class="card">
-                    <div class="card-content">
 
+        <section class="light">
+            <div class="container py-2">
+
+                <article class="postcard light blue">
+                    <img class="postcard__img" src="home_3.png" alt="Image Title" />
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title blue">Our Services</h1>
+                        <div class="postcard__bar"></div><br/>
+                        <div class="postcard__preview-txt">
+                            ♦Corporate VIP/VVIP client &nbsp; ♦Passenger charter &nbsp; ♦Leisure &nbsp; ♦Aerial work
+                            &nbsp; ♦Branding and advertising &nbsp; ♦Medical evacuation &nbsp; ♦Special
+                            events-product launches &nbsp; ♦Flower drops &nbsp; ♦Banner towing/ Flag displays
+                            &nbsp; ♦Wedding photography &nbsp; ♦Celebrations
+                        </div>
                     </div>
-                </div>
-        </div>}
-
-            {/* 1 */}
-            <div className="row row-edit my-5">
-                <div className="col-md-5 marg mx-3">
-                    <img
-                        className="d-block w-100"
-                        src="https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?b=1&s=170667a&w=0&k=20&c=F3PSMzB2x-pI-ctwUEGTY4jvnRYIi3PgCheBiCu8Y7Q="
-                        alt=""
-                    /><br />
-                </div>
-                <div className="col-md-5 mx-3 my-auto">
-                    <p>
-                        <h5 class="col-md-6 text-center text-primary">Our Services</h5>
-                        <ul>
-                            <li>&rarr; Corporate VIP/VVIP Client</li>
-                            <li>&rarr; Passenger Charter</li>
-                            <li>&rarr; Leisure</li>
-                            <li>&rarr; Aerial Work</li>
-                            <li>&rarr; Branding and Advertising</li>
-                            <li>&rarr; Medical Evacuation</li>
-                            <li>&rarr; Special Events-Product Launches</li>
-                            <li>&rarr; Flower Drops</li>
-                            <li>&rarr; Banner Towing/ Flag Displays</li>
-                            <li>&rarr; Wedding Photography</li>
-                            <li>&rarr; Celebrations</li>
-                            {/* <li>Anniversary Celebrations</li>
-                            <li>Birthday Celebrations</li>
-                            <li>Any other as required</li> */}
-                        </ul>
-                    </p>
-                </div>
-            </div>              
-
-            {/* 2 */}
-            <div className="row row-edit my-5">
-                <div className="col-md-5 mx-3 my-auto">
-                    <p>
-                        <h5 class="col-md-5 text-center text-primary">Why Aura Airlines Charter</h5>
-                        <ul>
-                        &rarr; Island wide Coverage <br />
-                        &rarr; Anytime, Anywhere <br />
-                        &rarr;  Available 24/7/365 <br />
-                        &rarr;  Best value for money <br />
-                        &rarr;  Ensure Safety, Security and Privacy <br />
-                        &rarr;  Full of Comfort, Luxury and Convenience <br />
-                        &rarr;   To fly happily <br />
-                        &rarr;   Guaranteed Safety and Our Dedication <br />
-                        &rarr;   Preeminent and Personalized Service <br />
-
-
-                        </ul>
-                    </p>
-                </div>
-                <div className="col-md-5 marg mx-3">
-                    <img
-                        className="d-block w-100"
-                        src="https://images.unsplash.com/photo-1566822777822-0b43388beaba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                        alt=""
-                    />
-                </div>
+                </article>
+                <article class="postcard light blue">
+                    <img class="postcard__img" src="home_2.png" alt="Image Title" />
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title blue">Why Aura Airlines Charter</h1>
+                        <div class="postcard__bar"></div><br/>
+                        <div class="postcard__preview-txt">
+                            ♦Island wide coverage &nbsp; ♦Anytime, Anywhere &nbsp; ♦Available
+                            24/7/365 &nbsp; ♦Best value for money &nbsp; ♦Ensure safety, Security
+                            and privacy &nbsp; ♦Full of comfort, Luxury and convenience &nbsp; ♦To
+                            fly happily &nbsp; ♦Guaranteed safety and our dedication &nbsp; ♦Preeminent
+                            and personalized service
+                        </div>
+                    </div>
+                </article>
+                <article class="postcard light blue">
+                    <img class="postcard__img" src="offer.jpg" alt="Image Title" />
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title blue">Safety</h1>
+                        <div class="postcard__bar"></div><br/>
+                        <div class="postcard__preview-txt">
+                            Aura Airlines considers safety as its prime consideration and therefore has
+                            implemented safety management systems (SMS) throughout our operation both
+                            horizontally and vertically.Highly experienced crew will provide extra support
+                            with safety ensuring health and personal welfare of our valuable clients.
+                        </div>
+                    </div>
+                </article>
+                <article class="postcard light blue">
+                    <img class="postcard__img" src="home_1.jpg" alt="Image Title" />
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title blue">Dedication</h1>
+                        <div class="postcard__bar"></div><br/>
+                        <div class="postcard__preview-txt">
+                            Our product reflects and improves the quality of life with the mission of the airline
+                            to make air travel an integral part of the tourism industry and Aura Airlines to be
+                            the most flexible, reliable, and safest mode of transport for domestic air travel
+                            among tourists, corporate clients, and locals.
+                        </div>
+                    </div>
+                </article>
             </div>
+        </section>
 
-            {/* 3 */}
-            <div className="row row-edit my-5">
-                <div className="col-md-5 marg mx-3">
-                    <img
-                        className="d-block w-100"
-                        src="https://images.unsplash.com/photo-1539201299177-2af0fae3d77f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                        alt=""
-                    />
-                </div>
-                <div className="col-md-5 mx-3 my-auto">
-                    <h5 class="text-center text-primary">Safety</h5>
-                    <p>
-                    Aura Airlines considers safety as its prime consideration and therefore has implemented safety management systems (SMS) throughout our operation both horizontally and vertically.Highly experienced crew will provide extra support with safety ensuring health and personal welfare of our valuable clients.
-
-                    </p>
-                </div>
-            </div>
-
-            {/* 4 */}
-            <div className="row row-edit my-5">
-                <div className="col-md-5 mx-3 my-auto">
-                    <h5 class="text-center text-primary">Dedication</h5>
-                    <p>
-                    Our product reflects and improves the quality of life with the mission 
-                    of the airline to make air travel an integral part of the tourism industry
-                    and Aura Airlines to be the most flexible, reliable, and safest mode of
-                    transport for domestic air travel among tourists, corporate clients, and locals.
-                    </p>
-                </div>
-                <div className="col-md-5 marg mx-3">
-                    <img
-                        className="d-block w-100"
-                        src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nzl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                        alt=""
-                    />
-                </div>
-            </div>
 
 {/* Article start */}
-
-
 
 
 <h3 className="sm-heading mx-auto pt-5 font-weight-bold display-6">Articles</h3>
@@ -241,68 +193,85 @@ function Home() {
     </div>
 </div><br/>
 
-
-<div className="pb-5">
-<div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-        <div className="carousel-item active">
-            <img src="https://wallpaper.dog/large/20522603.jpg" className="d-block mx-auto img-fluid" style={{height: "500px", width:'100%', objectFit: "cover"}} alt="..."/>
-            </div>
-            <div className="carousel-item">
-            <img src="https://wallpaper.dog/large/20522590.jpg" 
-            className="d-block mx-auto img-fluid" style={{height: "500px", width:'100%', objectFit: "cover"}} alt="..."/>
-            </div>
-            <div className="carousel-item">
-            <img src="https://wallpaper.dog/large/20522582.jpg"
-             className="d-block mx-auto img-fluid" style={{height: "500px", width:'100%', objectFit: "cover"}} alt="..."/>
-            </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-
-
 {/* Articles end */}
 
+{/* carousel start*/}
 
+        <div class="container">
+            <div class="row">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-none d-lg-block">
+                    <div class="slide-box">
+                        <img src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
+                        <img src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
+                        <img src="https://images.pexels.com/photos/2751667/pexels-photo-2751667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2"/>
+                        <img src="https://images.pexels.com/photos/739409/pexels-photo-739409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3"/>
+                    </div>
+                    </div>
+                    <div class="d-none d-md-block d-lg-none">
+                    <div class="slide-box">
+                        <img src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
+                        <img src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
+                        <img src="https://images.pexels.com/photos/2751667/pexels-photo-2751667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2"/>
+                    </div>
+                    </div>
+                    <div class="d-none d-sm-block d-md-none">
+                    <div class="slide-box">
+                        <img src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
+                        <img src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
+                    </div>
+                    </div>
+                    <div class="d-block d-sm-none">
+                    <img class="d-block w-100" src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-none d-lg-block">
+                    <div class="slide-box">
+                        <img src="https://images.pexels.com/photos/6045035/pexels-photo-6045035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="4"/>
+                        <img src="https://images.pexels.com/photos/5042817/pexels-photo-5042817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="5"/>
+                        <img src="https://images.pexels.com/photos/6840389/pexels-photo-6840389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="6"/>
+                        <img src="https://images.pexels.com/photos/4403902/pexels-photo-4403902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="7"/>
+                    </div>
+                    </div>
+                    <div class="d-none d-md-block d-lg-none">
+                    <div class="slide-box">
+                        <img src="https://images.pexels.com/photos/739409/pexels-photo-739409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3"/>
+                        <img src="https://images.pexels.com/photos/6045035/pexels-photo-6045035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="4"/>
+                        <img src="https://images.pexels.com/photos/5042817/pexels-photo-5042817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="5"/>
+                    </div>
+                    </div>
+                    <div class="d-none d-sm-block d-md-none">
+                    <div class="slide-box">
+                        <img src="https://images.pexels.com/photos/2751667/pexels-photo-2751667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2"/>
+                        <img src="https://images.pexels.com/photos/739409/pexels-photo-739409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3"/>
+                    </div>
+                    </div>
+                    <div class="d-block d-sm-none">
+                    <img class="d-block w-100" src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
+                    </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+            </div>
+        </div>
 
+{/* carousel end*/}
 
-            {/* <h3 className="sm-heading mx-auto">Articles</h3>
-            <div className="row row-edit">
-                <div className="col-md-3 ">
-                    <img
-                        className="d-block w-100 h-50 "
-                        src="https://wallpaper.dog/large/10792407.jpg"
-                        alt=""
-                    />
-                </div>
-                <div className="col-md-3">
-                    <img
-                        className="d-block w-100 h-50"
-                        src="https://images.unsplash.com/photo-1499063078284-f78f7d89616a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                        alt=""
-                    />
-                </div>
-                <div className="col-md-3">
-                    <img
-                        className="d-block w-100 h-50"
-                        src="https://images.unsplash.com/photo-1583150647472-d239652a12f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                        alt=""
-                    />
-                </div>
-            </div> */}
             <Footer />
         </div>
     );

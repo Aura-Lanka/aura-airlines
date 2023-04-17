@@ -247,7 +247,7 @@ function Book() {
                             <div><i class="fa-solid fa-phone"></i> +94 77 907 1437</div><br />
 
                             <label>Email Us</label>
-                            <div><i class="fas fa-envelope"></i> info@auralanka.com</div>
+                            <div><i class="fas fa-envelope"></i> info@auraairline.com</div>
                         </form>
                     </div>
 

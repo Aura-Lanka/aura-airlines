@@ -40,7 +40,7 @@ function Inquire() {
       <div className="Inquire">
         <div className='inquiry'>
             <img
-              src="https://wallpaper.dog/large/20509037.jpg"
+              src="./home_2.png"
               alt=""
               width="100%"
               height="100%"
@@ -48,79 +48,139 @@ function Inquire() {
             <h1 className="tittle-Inquire pb-5">
                 <b>Inquire Now</b>
             </h1>
+        </div><br/>
 
-        </div>
-        <div className="container">
-          <div className="card border-secondary my-5 text-center">
-            <div class="card-body text-secondary">
-              <h5 className="Immediate">For Immediate Assistance</h5>
-              <h4 className="phone-inquire p-1">Phone</h4>
-              <h6 className="p-1">+93111111444</h6>
-              <h4 className="p-1">Email</h4>
-              <h6 className="p-1">auraairlines.com</h6>
-            </div>
-            </div>
-        </div>
-        <div className="Inquirey">
-        <div className="firstForm-inquire">
-        <h2 className="headinng-Inquire p-5">We're with You Always</h2>
 
-        <div className="inputs-Inquire">
-        <form onSubmit={sendEmailContact} >
-          <h5 className="name-Inquire pt-3">Name *</h5>
 
-          <input
-            className="firstInput-Inquire my-3"
-            type="text"
-            placeholder="First Name"
-            name="first_name"
-          />
-          <input
-            className="lastInput-Inquire"
-            name="last_name"
-            type="text"
-            placeholder="Last Name"
-          />
-          <br />
-          <h5 className="name-Inquire">Email Address *</h5>
-          <input className="emailInput-Inquire" name='email' type="text" placeholder=""  required/>
-          <br />
-          <h5 className="name-Inquire pt-5">Phone Number *</h5>
-          <input className="emailInput-Inquire" name="phone_number" type="text" required placeholder="" />
-          <br />
-          <h5 className="name-Inquire pt-5">Message </h5>
-          <textarea  className="messageInput-Inquire" name='message' cols="30" rows="10"></textarea>          
+        <h3 className="sm-heading text-primary fw-bold">We're With You Always</h3>
 
-          <p className="reached-inquire p-1">How Do You Wish To Be Reached? *</p>
-          <select className="reached-inquire" name="contact" id="" required>
-  
- 
-          <option value="call us">Call us </option>
-          <option value="email">Email</option>
-        </select>
-        <br />
-          <div className=" button-inquire">
-          <button className="buttonin-inquire" >Send</button>
-          </div>
-        </form>
-        </div>
-        </div>
-        <h2 className="headinng-Inquire mt-5 p-5">Sign Up to Our  Newsletter</h2>
-        <div className="inputs-Inquire mt-5">
-        <h3 className="headinng0-Inquire p-5">We Respect Your Privacy and  it's  Our Priority</h3>
-        <form onSubmit={sendEmail}>
-        <h5 className="name-Inquire">Name *</h5>
-          <input className="emailInput-Inquire" name='to_name' type="text" placeholder="" />
-          <br />
-          <h5 className="name-Inquire pt-3">Email Address *</h5>
-          <input className="emailInput-Inquire" name='email' type="text" placeholder="" />
-          <div className="button-inquire">
-          <button className="buttonin-inquire"> Subscribe </button>
-          </div>
-          {/* <input className="button buttonin-inquire" type="submit" value="Subscribe"></input></div> */}
-        </form>
-        </div>
-      </div>
+        {/*form start*/}
+        
+        <div class="container">
+                <div className="row">
+
+                <div className="col-md-7">
+                    <div className="book contact1">
+                        <form onSubmit={sendEmailContact}>
+                            <label>Name<em className="text-danger">*</em></label>
+                            <div className="row ">
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label>First Name<em className="text-danger">*</em></label><br />
+                                    <input className='b-Input w-100' name='first_name' type="text" required />
+                                </div>
+                            </div>
+
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label>Last Name<em className="text-danger">*</em></label><br />
+                                    <input  className='b-Input w-100' name='last_name'  type="text" required />
+                                </div>
+                            </div>
+
+                            
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label >Email Address<em className="text-danger">*</em></label><br />
+                                    <input  className='b-Input w-100' name='email' type="email" required />
+                                </div>
+                            </div>
+
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label>Subject<em className="text-danger">*</em></label><br />
+                                    <input  className='b-Input w-100' name='subject' type="text" required />
+                                </div>
+                            </div>
+
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label >Message<em className="text-danger">*</em></label><br />
+                                    <textarea  className="b-Input w-100" name='message' cols="30" rows="10" required></textarea>
+                                </div>
+                            </div>
+
+                           
+                            <div className='edit-margin'>
+                              <label>How Do You Wish To Be Reached<em className="text-danger">*</em></label><br />
+                                <label className="px-3"><input id="oneWay" for ="oneWay"
+                                type="radio" className="mx-2" name="flightInfo"/>Call us</label>
+
+                                <label className="px-3"><input id="roundTrip" for ="roundTrip" 
+                                type="radio" className="mx-2 " name="flightInfo"/>Email us</label>
+                            </div>
+                            
+
+                            <div className='edit-margin'>
+                                <div className='butt-on d-grid gap-2 col-4 mx-auto'>
+                                    <button className='buttonInput'>Send</button>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            {/*form end*/}
+
+            
+
+            {/*Assistance details*/}
+
+                <div className="col-md-4" /*my-auto*/>
+                <h2 className="headinng-Inquire p-5 mt-5 text-primary">Sign Up to Our  Newsletter</h2>
+
+                    <div className="book contact1">
+
+                    <h5>We Respect Your Privacy and it's Our Priority</h5><br />
+                        <form>
+                          <div className="edit-margin">
+                            <label>Phone Number<em className="text-danger">*</em></label><br />
+                            <div className="row ">
+                                <div className="col-md-4">
+                                    <input id="country_code" 
+                                    type="text" name="country_code" className="b-Input w-100" placeholder="+94" required/>
+                                </div>
+                                <div className="col-md-8">
+                                    <input  id="phone_number" 
+                                    type="tel" name="phone_number" className="b-Input w-100" placeholder="77+++++++++" required/>
+                                </div>
+                            </div>
+
+                            </div>
+
+                            <div className="edit-margin">
+                                <label>Email Address<em className="text-danger">*</em></label><br />
+                                <input id="email"
+                                type="email" email='email' name="email" className="b-Input w-100" placeholder="John@gmail.com"  
+                                oninvalid="this.setCustomValidity('Please Enter valid email')"
+                                oninput="setCustomValidity('')" required/>
+                            </div>
+
+                            <div className='butt-on d-grid gap-2 col-4 mx-auto'>
+                                <button className='buttonInput' type="submit" >Subscribe</button>
+                                </div> 
+                        </form>
+                    </div>
+                  </div>
+              </div>
+            </div>   
+
+            {/*Assistance details end*/}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
       <Footer />
     </>

@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from "react";
 import './About.css';
 import Footer from '../Footer/Footer';
+import { Link } from "react-router-dom";
 
 
 function About() {
@@ -45,6 +46,27 @@ function About() {
                 <p className='desciritionText-about' >To be the leader in business and leisure airline by conquering global skies.</p>
             </div>
         </div>
+
+
+{/*vision & mission start*/}
+
+
+
+
+
+{/*vision & mission end*/}
+
+
+{/*our services start */}
+
+
+
+
+
+
+{/*our services end */}
+
+
         <div className='desciritionColor-about '>
 
         <h3 className='desciritionText-about3'><b>Who We Are</b></h3>
@@ -67,54 +89,147 @@ function About() {
         </div>
         </div>
 
-        <h3 className='desciritionText-about3'><b>Our Services</b></h3>
-        <div className='borber container'>
-        <div className="row">
-            <div className="services col-md-3">
-                &rarr; Corporate VIP/VVIP Client
-            </div>
-            <div className="services col-md-3">
-                &rarr; Passenger Charter
-            </div>
-            <div className="services col-md-3">
-                &rarr; Leisure
-            </div>
-            <div className="services col-md-3">
-                &rarr; Aerial Work
-            </div>
-            <div className="services col-md-3">
-                &rarr; Branding and Advertising
-            </div>
-            <div className="services col-md-3">
-                &rarr; Medical Evacuation
-            </div>
-            <div className="services col-md-3">
-                &rarr; Special Events-Product Launches
-            </div>
-            <div className="services col-md-3">
-                &rarr; Flower Drops
-            </div>
-            <div className="services col-md-3">
-                &rarr; Banner Towing/ Flag Displays
-            </div>
-            <div className="services col-md-3">
-                &rarr; Wedding Photography
-            </div>
-            <div className="services col-md-3">
-                &rarr; Anniversary celebrations
-            </div>
-            
-        </div>
+        <div><h3 className='desciritionText-about3'><b>Our Services</b></h3></div><br/><br/>
+        
+        {/*Our services start*/}
 
+        <div class='container-services'>
+          <div class='card-left'>
+            <div class='card-image'>
+              <img src='https://st2.depositphotos.com/2036511/8872/v/950/depositphotos_88723682-stock-illustration-gold-vip-member-rosette.jpg&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Corporate VIP/VVIP Client</p>
+            </div>
+          </div>
+          <div class='card-top'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1517896103326-de0a426263a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Passenger Charter</p>
+            </div>
+          </div>
+          <div class='card-right'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1472745433479-4556f22e32c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Leisure</p>
+            </div>
+          </div>
+          <div class='card-right'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1496542300521-498212704527?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Aerial Work</p>
+            </div>
+          </div>
+          <div class='card-top'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1628237094183-262cb5c8e173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Branding and Advertising</p>
+            </div>
+          </div>
+          <div class='card-bottom'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1638165212448-4b182782c533?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Medical Evacuation</p>
+            </div>
+          </div>
+          <div class='card-left'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;dpr=2&amp;w=500'/>
+            </div>
+            <div class='card-text'>
+              <p>Special Events-Product Launches</p>
+            </div>
+          </div>
+          <div class='card-bottom'>
+            <div class='card-image'>
+              <img src='https://aonehelicopters.com/uploads/595/371/cf/service_images/wa87RBNM3g.jpg&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Flower Drops</p>
+            </div>
+          </div>
+          <div class='card-right'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1482398650355-d4c6462afa0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Banner Towing/ Flag Displays</p>
+            </div>
+          </div>
+          <div class='card-top'>
+            <div class='card-image'>
+              <img src='./wedding_cle.jpg'/>
+            </div>
+            <div class='card-text'>
+              <p>Wedding Photography</p>
+            </div>
+          </div>
+          <div class='card-left'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1471804230854-2df0a09fdc18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Anniversary celebrations</p>
+            </div>
+          </div>
+          <div class='card-top'>
+            <div class='card-image'>
+              <img src='https://images.unsplash.com/photo-1525598912003-663126343e1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+            </div>
+            <div class='card-text'>
+              <p>Want More...</p>
+              <Link className="nav-link nav-link-color text-capitalize" aria-current="page" to="/Contact"><p class="text-transform: lowercase;">Please Contact Us</p></Link>
+              {/*<p>Please Contact Us</p>*/}
+            </div>
+          </div>
         </div>
+  
+        {/*Our services end*/}
+
         <div className='row descirition margin'>
         <h3 className='descirition5-about'>Message From Chairman</h3>
-            <div className='col-md-5 my-auto'>
-                <p className='desciritionText-about' >Success of a human being is really a great news for them as well as for you ..specially for you as it paved a way to go.</p>
+
+        {/*chairman profile start*/}
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <div class="container profile-page">
+            <div class="row">
+                <div class="">
+                    <div className="card profile-header text-center">
+                        <div class="body">
+                            <div class="row">
+                                <div class="profile-image float-md-right"> 
+                                    <img src="./chairman.png" alt=""/> 
+                                </div>
+
+                                <h4 class="m-t-0 m-b-0"><strong>Dr. Viranjith Thambugala</strong></h4>
+                                <div class="job_post">CHAIRMAN</div><br/><br/>
+                                <p className="voice text-center">Success of a human being is really a great news for them as well as for 
+                                    you. Specially for you as it paved a way to go.</p>
+                                <p class="social-icon m-t-5 m-b-0 text-center">
+                                    <a title="Twitter" href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a title="Facebook" href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                                    <a title="Instagram" href="javascript:void(0);"><i class="fa fa-instagram "></i></a>
+                                </p>
+                    
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
             </div>
-            <div className='col-md-7'>
-            <img  src="https://petapixel.com/assets/uploads/2022/05/how-to-take-photos-out-of-an-airplane-window-featured.jpg" alt="" width="100%" height="100%" />    
-            </div>
+        </div>
+
+        {/*chairman profile end*/}            
         </div>
         </div>
         <Footer/>

@@ -26,7 +26,7 @@ function Offers() {
                 data-bs-ride="carousel"
             >
                 <div className="carousel-inner">         
-                    <h1 className="main-heading">Enjoy our Exclusive Offers</h1>
+                    <h1 className="main-heading">Enjoy Our Exclusive Offers</h1>
                     <div className="carousel-item active">
                         <img
                             src="./offer.jpg"
@@ -61,22 +61,42 @@ function Offers() {
                 </button>
             </div>
 
+
             <h1 className="sm-heading text-primary fw-bold">Offers Are....!!</h1>
 
-                <p className="text-center container text-part2">
-                    Solid for reduced rates
-                </p>
+            <div class="container">
+	            <div class="row">
 
-                <p className="text-center container text-part2">
-                    Usually Offer when an Aircraft
-                    <li> Is landing to pickup passengers</li>
-                    <li>Has to flown empty back to its home</li>
-                </p>
-       
-                <p className="text-center container text-part2">
-                    Solely for the benfit of our clients
-                </p>
-        
+		            <div class="col-md-4">
+                        <div class="profile-card-4 text-center"><img src="./home_3.png" class="img img-responsive"/>
+                            <div class="profile-content">
+                                <div class="profile-description">Solid for reduced rates</div>
+                            </div>
+	                    </div>
+                    </div>
+
+		            <div class="col-md-4">
+                        <div class="profile-card-4 text-center"><img src="./home_2.png" class="img img-responsive"/>
+                            <div class="profile-content">
+                                <div class="profile-description2">Usually offer when an Aircraft</div>
+                                <div class="profile-description3">
+                                    <li> Is landing to pickup passengers</li>
+                                    <li>Has to flown empty back to its home</li>
+                                </div>
+                            </div>
+	                    </div>
+                    </div>
+
+		            <div class="col-md-4">
+                        <div class="profile-card-4 text-center"><img src="./C01.png" class="img img-responsive"/>
+                            <div class="profile-content">
+                                <div class="profile-description">Solely for the benefit of our clients</div>
+                            </div>
+	                    </div>
+                    </div>
+
+                </div>
+            </div><br/> 
 
             <div className="book-part2">
                 <div className="table-responsive-sm text-center">
@@ -156,6 +176,10 @@ function Offers() {
                 </table>
                 </div>
             </div>
+
+
+
+
             <Footer />
         </>
     );

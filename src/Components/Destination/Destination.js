@@ -1,7 +1,8 @@
-import React, {useEffect, useRef} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import "../../App.css";
 import './Destination.css'
 import Footer from "../Footer/Footer"
+import Image from "../../Image";
 
 function Destination() {
 
@@ -10,23 +11,78 @@ function Destination() {
           topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
           }, []);
 
+        const [images, setImages] = useState([])
+
+        useEffect(() => {
+                const fetchImages = async ()=> {
+                        const response = await fetch(`https://api.unsplash.com/photos?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
+                        const data = await response.json()
+                        setImages(data)
+                        console.log(data)
+                }
+
+                fetchImages()
+        }, [])
+
     return(
         <>
         <div ref={topContainer} />
+
         <div className="Destination">
-        <div className="destin ">
-                {/*<h1 className='tittle-about p-3 text-center'><b>DESTINATION</b></h1>*/}
-                <h1 className="img-tittle text-center p-1">Fly with Us to<br/>Amazing <br/> Destinations</h1>
-                <img
-                    src="./destination.png"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                />
-                <div className="carousel-caption">
-                    {/* <button className="button-img3">Book Now</button> */}
-                </div>
+                <div className="destin">
+                        {/*<h1 className='tittle-about p-3 text-center'><b>DESTINATION</b></h1>*/}
+                        <h1 className="img-tittle text-center p-1">Fly with Us to<br/>Amazing <br/> Destinations</h1>
+                        <img
+                                src="./destination.png"
+                                alt=""
+                                width="100%"
+                                height="100%"
+                                />
+                        <div className="carousel-caption">
+                                {/*<button className="button-img3">Book Now</button>*/}
+                        </div>
         </div>
+
+        {!images ? <h2 className="flex item-center justify-center h-screen font-bold text-4xl
+        text-center text-slate-800">Loading....</h2> :
+                <section className="px-5 container mx-auto">
+                        <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl my-10 
+                        lg:mt-20 lg:mb-16 text-slate-800 capitalize">Sample Articles</h1>
+
+                        <div class="container">
+                        <div class="row">
+                        <div className="col-md-4">
+                            {images.map((image) => (
+                                <Image key={image.id} {...image} />
+                            ))}     
+                        </div>
+                        </div>
+                        </div>
+
+                </section>
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+        {/*
                 <div className="all-article pb-5">
                 <div  className="row article-destination">
         <div className="col-md-5"> 
@@ -83,7 +139,7 @@ function Destination() {
                     height="70%"
                   /></div>
                 </div>
-        </div>
+        </div>*/}
         </div>
         <Footer />
         </>

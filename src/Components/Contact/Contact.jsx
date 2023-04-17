@@ -79,7 +79,7 @@ function Contact() {
                     </button>
                 </div>
                 </div>
-                <h3 className="sm-heading text-primary fw-bold">We're with You Always</h3>
+                <h3 className="sm-heading text-primary fw-bold">We're With You Always</h3>
                 <div className='book-part contact1'>
                     <form onSubmit={sendEmailContact}>
                         <div className='row'>
@@ -133,7 +133,11 @@ function Contact() {
                 <div className="container">
                     <h3 className='sm-heading text-primary fw-bold'>Want Some Assistance...?</h3>
                     <div className='butt-on d-grid gap-2 col-3 mx-auto'>
-                        <button className='buttonInput'>Inquire Now</button>
+                        <li className="nav-item edit">
+                            <Link className="nav-link nav-link-color" aria-current="page" to="/Inquire">
+                                <button className='buttonInput'>Inquire Now</button>
+                            </Link>
+                        </li>
                     </div>
                 </div>
 

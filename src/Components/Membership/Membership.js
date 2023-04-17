@@ -48,18 +48,70 @@ function Membership() {
                   />
                   <h1 className="img-tittle">For an Extraordinary Fly</h1>
 
-          <div><br/>
-            <p className="text-center container text-part2">
-              <ul>
-                <li>&rarr; 24/7 dedicated personal advisor</li>
-                <li>&rarr; Add rates per every travel </li>
-                <li>&rarr; Free travel for the added rates</li>
-                <li>&rarr; Get exclusive offers for  travels</li>
-                <li>&rarr; Livestyle management</li>
-                <li>&rarr; Handling hotel arrangements</li>
-                <li>&rarr; Handling ticket reservations for events </li>
-              </ul>
-            </p>
+          <div><br/><br/>
+
+        {/*destination offers start*/}
+
+        <div class='container-services'>
+            <div class='card-left'>
+                <div class='card-image'>
+                <img src='https://plus.unsplash.com/premium_photo-1664298826344-dacdb6940c60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+                </div>
+                <div class='card-text'>
+                <p>24/7 Dedicated personal advisor</p>
+                </div>
+            </div>
+            <div class='card-top'>
+                <div class='card-image'>
+                <img src='https://images.unsplash.com/photo-1549574396-2becb499c91b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'/>
+                </div>
+                <div class='card-text'>
+                <p>Add rates per every travel</p>
+                </div>
+            </div>
+            <div class='card-right'>
+                <div class='card-image'>
+                <img src='https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+                </div>
+                <div class='card-text'>
+                <p>Free travel for the added rates</p>
+                </div>
+            </div>
+            <div class='card-right'>
+                <div class='card-image'>
+                <img src='https://images.unsplash.com/photo-1540774151601-87ccb231aa54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+                </div>
+                <div class='card-text'>
+                <p>Get exclusive offers for  travels</p>
+                </div>
+            </div>
+            <div class='card-top'>
+                <div class='card-image'>
+                <img src='https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+                </div>
+                <div class='card-text'>
+                <p>Lifestyle management</p>
+                </div>
+            </div>
+            <div class='card-bottom'>
+                <div class='card-image'>
+                <img src='https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+                </div>
+                <div class='card-text'>
+                <p>Handling hotel arrangements</p>
+                </div>
+            </div>
+            <div class='card-bottom'>
+                <div class='card-image'>
+                <img src='https://images.unsplash.com/photo-1623068285726-21b0fcabe7f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+                </div>
+                <div class='card-text'>
+                <p>Handling ticket reservations for events</p>
+                </div>
+            </div>
+        </div>
+  
+        {/*destination offers end*/}  {/*CSS comes from about us page.cc*/}
 
           </div>
       </div>
@@ -183,11 +235,11 @@ function Membership() {
                           <div className="edit-margin">
                             <label>Phone Number<em className="text-danger">*</em></label><br />
                             <div className="row ">
-                                <div className="col-md-2">
+                                <div className="col-md-4">
                                     <input id="country_code" 
                                     type="text" name="country_code" className="b-Input w-100" placeholder="+94" required/>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-md-8">
                                     <input  id="phone_number" 
                                     type="tel" name="phone_number" className="b-Input w-100" placeholder="77+++++++++" required/>
                                 </div>
@@ -208,7 +260,7 @@ function Membership() {
                                 </div> 
                         </form>
                     </div>
-                    <div className="rounded mx-auto d-block col-md-7 text-center"><img className="d-block w-100" src="./06-rounded.png" alt="" /></div>
+                    <div className="rounded mx-auto d-block col-md-7 text-center"><img className="d-block w-100" src="./home_3.png" alt="" /></div>
                 </div>
             </div>
             </div>   
