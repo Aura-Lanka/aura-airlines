@@ -27,32 +27,33 @@ function About() {
         <div className="carousel-caption">
         {/* <button className="button-img1">Book Now</button> */}
         </div>
-        </div>
-        <div className='row descirition margin'>
-            <div className='col-md-5 my-auto'>
-                <h2 className='p-1'>Our Mission</h2>
-                <p className='desciritionText-about' >We at Aura Airlines thrive to maintain flawless safety records by striving for the highest professional and regulatory requirements in Airline Industry. We are dedicated towards earning customer satisfaction by improving local opportunity, social responsibility, economic and environmental well-being of its stakeholders by diversifying todays airline business requirements.</p>
-            </div>
-            <div className='col-md-7'>
-            <img  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="" width="100%" height="100%" />    
-            </div>
-        </div>
-        <div className='row descirition margin'>
-            <div className='col-md-7'>
-            <img src="https://burst.shopifycdn.com/photos/clouds-from-aircraft-window.jpg?width=1200&format=pjpg&exif=1&iptc=1" alt="" width="100%" height="100%" />    
-            </div>
-            <div className='col-md-5 my-auto '>
-                <h2 className='p-1'>Our vision</h2>
-                <p className='desciritionText-about' >To be the leader in business and leisure airline by conquering global skies.</p>
-            </div>
-        </div>
-
+        </div><br/>
 
 {/*vision & mission start*/}
 
+      <div class="wrapper">
+        <figure class="card_mi">
+          <img class="img_mi" src="https://images.unsplash.com/photo-1579118559062-39e94a22dbb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80" width="100" height="640" alt="" />
+          <figcaption>
+            <blockquote>
+              Our Mission
+            </blockquote>
+            <cite>
+              We at Aura Airlines thrive to maintain flawless safety records by striving for the highest professional 
+              and regulatory requirements in Airline Industry. We are dedicated towards earning customer satisfaction by 
+              improving local opportunity, social responsibility, economic and environmental well-being of its stakeholders 
+              by diversifying todays airline business requirements.
+            </cite>
 
-
-
+            <blockquote>
+              Our vision
+            </blockquote>
+            <cite>
+              To be the leader in business and leisure airline by conquering global skies.
+            </cite>
+          </figcaption>
+        </figure>
+      </div>
 
 {/*vision & mission end*/}
 

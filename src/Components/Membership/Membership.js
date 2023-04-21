@@ -52,66 +52,89 @@ function Membership() {
 
         {/*destination offers start*/}
 
-        <div class='container-services'>
-            <div class='card-left'>
-                <div class='card-image'>
-                <img src='https://plus.unsplash.com/premium_photo-1664298826344-dacdb6940c60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+
+                <div class="ag-courses-item_title text-capitalize">
+                    24/7 Dedicated personal advisor
                 </div>
-                <div class='card-text'>
-                <p>24/7 Dedicated personal advisor</p>
-                </div>
+
+                </p>
             </div>
-            <div class='card-top'>
-                <div class='card-image'>
-                <img src='https://images.unsplash.com/photo-1549574396-2becb499c91b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'/>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+
+                <div class="ag-courses-item_title text-capitalize">
+                    Add rates per every travel
                 </div>
-                <div class='card-text'>
-                <p>Add rates per every travel</p>
-                </div>
+
+                </p>
             </div>
-            <div class='card-right'>
-                <div class='card-image'>
-                <img src='https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    Free travel for the added rates
                 </div>
-                <div class='card-text'>
-                <p>Free travel for the added rates</p>
-                </div>
+
+                </p>
             </div>
-            <div class='card-right'>
-                <div class='card-image'>
-                <img src='https://images.unsplash.com/photo-1540774151601-87ccb231aa54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    Get exclusive offers for travels
                 </div>
-                <div class='card-text'>
-                <p>Get exclusive offers for  travels</p>
-                </div>
+        
+                </p>
             </div>
-            <div class='card-top'>
-                <div class='card-image'>
-                <img src='https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    Lifestyle management
                 </div>
-                <div class='card-text'>
-                <p>Lifestyle management</p>
-                </div>
+        
+                </p>
             </div>
-            <div class='card-bottom'>
-                <div class='card-image'>
-                <img src='https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    Handling hotel arrangements
                 </div>
-                <div class='card-text'>
-                <p>Handling hotel arrangements</p>
-                </div>
+
+                </p>
             </div>
-            <div class='card-bottom'>
-                <div class='card-image'>
-                <img src='https://images.unsplash.com/photo-1623068285726-21b0fcabe7f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    Handling ticket reservations for events
                 </div>
-                <div class='card-text'>
-                <p>Handling ticket reservations for events</p>
-                </div>
+
+                </p>
+            </div>
+        
             </div>
         </div>
   
-        {/*destination offers end*/}  {/*CSS comes from about us page.cc*/}
+        {/*destination offers end*/}
 
           </div>
       </div>

@@ -8,6 +8,7 @@ import emailjs from 'emailjs-com';
 function Book() {
     const url = "https://auraairline.com/aura_airlines/CustomerInquiryDetails"
     const [data, setData] = useState({
+        title:"",
         first_name:"",
         last_name:"",
         country_code:"",
@@ -24,6 +25,7 @@ function Book() {
     function submit(e){
         e.preventDefault();
         Axios.post(url,{
+            title:data.title,
             first_name:data.first_name,
             last_name:data.last_name,
             country_code:data.country_code,
@@ -88,9 +90,10 @@ function Book() {
                         Your browser does not support the video tag.
                 </video> */}
                 {/*<iframe width="100%" height="460" src="https://drive.google.com/uc?id=1-nRbPRxrB6DWlxiny6tK8ndFCr3xnbyl" alt="Google Drive Image" ></iframe>*/}
-                <iframe src="https://drive.google.com/file/d/1-nRbPRxrB6DWlxiny6tK8ndFCr3xnbyl/preview" width="80%" height="540" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1-nRbPRxrB6DWlxiny6tK8ndFCr3xnbyl/preview" width="80%" height="540" allow="autoplay" allowfullscreen></iframe>
                 {/*<div class="centered">Fly with Aura Airlines Safely & Happily</div>*/}
                 </div>
+
                 <h3 className="sm-heading text-primary fw-bold">Tells Us Your Travel Plans</h3>
                 
 
@@ -104,11 +107,22 @@ function Book() {
                         <form onSubmit={(e)=> submit(e)}>
                             <label>Name<em className="text-danger">*</em></label>
                             <div className="row ">
-                                <div className="col-md-6">
+                                <div className="col-md-2">
+
+                                    <select onChange={(e)=>handle(e)} id="title" value={data.title}
+                                    name="title" className="b-Input w-100" required>
+                                        <option>Title</option>
+                                        <option>Mr</option>
+                                        <option>Ms</option>
+                                        <option>Miss</option>
+                                    </select>
+
+                                </div>
+                                <div className="col-md-5">
                                     <input onChange={(e)=>handle(e)} id="first_name" value={data.first_name} 
                                     type="text" name="first_name" className="b-Input w-100" placeholder="First Name" required/>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-5">
                                     <input onChange={(e)=>handle(e)} id="last_name" value={data.last_name} 
                                     type="text" name="last_name" className="b-Input w-100" placeholder="Last Name" required/>
                                 </div>

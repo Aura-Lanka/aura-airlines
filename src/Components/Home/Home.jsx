@@ -102,10 +102,27 @@ function Home() {
                         <h1 class="postcard__title blue">Our Services</h1>
                         <div class="postcard__bar"></div><br/>
                         <div class="postcard__preview-txt">
-                            ♦Corporate VIP/VVIP client &nbsp; ♦Passenger charter &nbsp; ♦Leisure &nbsp; ♦Aerial work
-                            &nbsp; ♦Branding and advertising &nbsp; ♦Medical evacuation &nbsp; ♦Special
-                            events-product launches &nbsp; ♦Flower drops &nbsp; ♦Banner towing/ Flag displays
-                            &nbsp; ♦Wedding photography &nbsp; ♦Celebrations
+                            <div class="row">
+                                <div class="col col-md-6">
+                                    <ul>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Corporate VIP/VVIP client</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Passenger charter</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Leisure</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Aerial work</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Branding and advertising</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Medical evacuation</li>
+                                    </ul>
+                                </div>
+                                <div class="col col-md-6">
+                                    <ul>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Special events-product launches</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Flower drops</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Banner towing/ Flag displays</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Wedding photography</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Celebrations</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -115,11 +132,25 @@ function Home() {
                         <h1 class="postcard__title blue">Why Aura Airlines Charter</h1>
                         <div class="postcard__bar"></div><br/>
                         <div class="postcard__preview-txt">
-                            ♦Island wide coverage &nbsp; ♦Anytime, Anywhere &nbsp; ♦Available
-                            24/7/365 &nbsp; ♦Best value for money &nbsp; ♦Ensure safety, Security
-                            and privacy &nbsp; ♦Full of comfort, Luxury and convenience &nbsp; ♦To
-                            fly happily &nbsp; ♦Guaranteed safety and our dedication &nbsp; ♦Preeminent
-                            and personalized service
+                            <div class="row">
+                                <div class="col col-md-6">
+                                    <ul>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Island wide coverage</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Anytime, Anywhere</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Available 24/7/365</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Best value for money</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Ensure safety, Security and privacy</li>
+                                    </ul>
+                                </div>
+                                <div class="col col-md-6">
+                                    <ul>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Full of comfort, Luxury and convenience</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; To fly happily</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Guaranteed safety and our dedication</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Preeminent and personalized service</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
