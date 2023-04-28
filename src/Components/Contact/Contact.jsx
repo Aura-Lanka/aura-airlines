@@ -37,98 +37,93 @@ function Contact() {
       <div ref={topContainer}/>
             <div>
                 <div className='position-relative'>
-                <h1 className="main-heading">Fly with Aura!</h1>
-                <div
-                    id="carouselExampleControls"
-                    className="carousel slide  carsouel1-edit"
-                    data-bs-ride="carousel"
-                >
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img
-                                src="./contact.png"
-                                className="d-block w-100"
-                                alt="..."
-                            />
+                    <div
+                        id="carouselExampleControls"
+                        className="carousel slide  carsouel1-edit"
+                        data-bs-ride="carousel"
+                    >
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img
+                                    src="./mainimg.png"
+                                    className="d-block w-100"
+                                    alt="..."
+                                />
+                                <div class="tittle-welcome">Fly With Aura!</div>
+                            </div>
+
                         </div>
 
                     </div>
-                    <button
-                        className="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev"
-                    >
-                        <span
-                            className="carousel-control-prev-icon"
-                            aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        className="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next"
-                    >
-                        <span
-                            className="carousel-control-next-icon"
-                            aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
                 </div>
-                </div>
+
+
+
                 <h3 className="sm-heading text-primary fw-bold">We're With You Always</h3>
-                <div className='book-part contact1'>
+
+                {/*form*/}
+
+                <div class="session ">
+
+                    <div class="left">
+                    <img  src="https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1129&q=80" className="h-100" alt="..." />
+                    </div>
+                    <div class="contactUs-form">
                     <form onSubmit={sendEmailContact}>
-                        <div className='row'>
+                        <div class="form-group">
 
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label>First Name<em className="text-danger">*</em></label><br />
-                                    <input className='b-Input w-100' name='first_name' type="text" required />
+                            <div className="row">
+                                <label>Name<em className="text-danger">*</em></label><br /> 
+
+                                <div className="col-md-2">                                     
+                                    <select  id="title" value=""
+                                    name="title" class="form-select item" required>
+                                        <option>Mr</option>
+                                        <option>Ms</option>
+                                        <option>Miss</option>
+                                    </select>
+                                </div>
+
+                                <div className="col-md-5">
+                                    <input id="first_name" type="text" name="first_name" class="form-control item" placeholder="First Name" required/>
+                                </div>
+
+                                <div className="col-md-5">
+                                    <input id="last_name" type="text" name="last_name" class="form-control item" placeholder="Last Name" required/>
                                 </div>
                             </div>
 
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label>Last Name<em className="text-danger">*</em></label><br />
-                                    <input  className='b-Input w-100' name='last_name'  type="text" required />
-                                </div>
                             </div>
 
-                            
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
+                            <div class="form-group">
+
+                            <div className="row">
+                                <div className="col-md-6">
                                     <label >Email Address<em className="text-danger">*</em></label><br />
-                                    <input  className='b-Input w-100' name='email' type="email" required />
+                                    <input  class="form-control item" name='email' type="email" placeholder="John@gmail.com" required />
                                 </div>
-                            </div>
 
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
+                                <div className="col-md-6">
                                     <label>Subject<em className="text-danger">*</em></label><br />
-                                    <input  className='b-Input w-100' name='subject' type="text" required />
+                                    <input  class="form-control item" name='subject' type="text" placeholder="Please type here..." required />
                                 </div>
                             </div>
-
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label >Message<em className="text-danger">*</em></label><br />
-                                    <textarea  className="b-Input w-100" name='message' cols="30" rows="10" required></textarea>
-                                </div>
-                            </div>
-                            <div className='edit-margin'>
-                                <div className='butt-on d-grid gap-2 col-4 mx-auto'>
-                                    <button className='buttonInput'>Send</button>
-                                </div>
                             </div>
 
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <label >Message<em className="text-danger">*</em></label><br />
+                                <textarea  class="form-control item" name='message' cols="30" rows="10" placeholder="Please type here..." required></textarea>
+                            </div>
+                                
+                            <div className='butt-on d-grid gap-2 col-4 mx-auto'>
+                                <button className='buttonInput' id="btn" type="submit">Send</button>
+                            </div>
 
+                        </form>
+                    </div>
                 </div>
+
+                {/*form end*/}
 
                 <div className="container">
                     <h3 className='sm-heading text-primary fw-bold'>Want Some Assistance...?</h3>
@@ -141,36 +136,7 @@ function Contact() {
                     </div>
                 </div>
 
-                {/*
-                <div className="container">
-                    <div className="row newsletter">
-                        <div className="col-md-6 my-4">
-                            <h3 className='sm-heading'>Sign Up to Our Newsletter</h3>
-                            <p className="p text-center">
-                                <b>We respect your privacy.</b>
-                            </p>
-                        </div>
-                        <div className="col-md-6">
-                <form onSubmit={sendEmail}>
-
-                <div className='edit-margin'>
-                    <label>Name</label><br />
-                    <input  className="b-Input w-100" name='to_name' type="text" />
-                </div>
-
-                <div className='edit-margin'>
-                    <label >Email Address</label><br />
-                    <input className="b-Input w-100" name='email' type="email" />
-                </div>
-
-                <div className='butt-on'>
-                    <button className='buttonInput '>Subscribe</button>
-                </div>
-                </form>
-                </div>
-                </div>
-                </div>
-                        */}
+                
                 
             </div>
             <Footer/>

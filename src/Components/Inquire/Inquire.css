@@ -28,3 +28,19 @@
     }
 }
 
+/*****form*****/
+
+.session_2 {
+    display:  flex;
+    max-width: 1000px;
+    width:  auto; 
+    height:  550px; 
+    margin:  auto auto; 
+    /*background:  #d91616;*/
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 2px 10px #4568ff; 
+    }
+

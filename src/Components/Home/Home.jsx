@@ -73,20 +73,21 @@ function Home() {
             </div>
             <div className="text-part container">
                 <p className="text-center container text-part1">
+                <span className="font-link">
                     Aura Airlines is a concept conglomerate in the Airline Industry in Sri Lanka which was founded in 2018 and dedicates its approach mainly 
                     to uplift Airline services solely for the benefit of the entire community. Private & Business Airline, as an exclusive platform which customers 
                     can benefit from in the fields of Leisure, Corporate and VIP transport solutions, and service for both domestic and international market.
-
+                    </span>
                 </p>
                 <div className="row row-edit  text-center">
                     <div className="col-md-2 my-auto">
                         <button className="buttonInput " type="submit" value="Subscribe" >
-                            Inquire Now
+                        <span className="font-link">Inquire Now</span>
                         </button>
                     </div>
                     <div className="col-md-2 my-3">
                         <button className="buttonInput" type="submit" value="Subscribe">
-                            Book Now
+                        <span className="font-link">Book Now</span>
                         </button>
                     </div>
                 </div>
@@ -99,11 +100,12 @@ function Home() {
                 <article class="postcard light blue">
                     <img class="postcard__img" src="home_3.png" alt="Image Title" />
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue">Our Services</h1>
+                        <h1 class="postcard__title blue"><span className="font-link">Our Services</span></h1>
                         <div class="postcard__bar"></div><br/>
                         <div class="postcard__preview-txt">
                             <div class="row">
-                                <div class="col col-md-6">
+                                <div class="col col-md-6"><p class="lh-base">
+                                    <span className="font-link">
                                     <ul>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Corporate VIP/VVIP client</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Passenger charter</li>
@@ -112,8 +114,10 @@ function Home() {
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Branding and advertising</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Medical evacuation</li>
                                     </ul>
+                                    </span></p>
                                 </div>
-                                <div class="col col-md-6">
+                                <div class="col col-md-6"><p class="lh-base">
+                                    <span className="font-link">
                                     <ul>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Special events-product launches</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Flower drops</li>
@@ -121,6 +125,7 @@ function Home() {
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Wedding photography</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Celebrations</li>
                                     </ul>
+                                    </span></p>
                                 </div>
                             </div>
                         </div>
@@ -129,26 +134,30 @@ function Home() {
                 <article class="postcard light blue">
                     <img class="postcard__img" src="home_2.png" alt="Image Title" />
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue">Why Aura Airlines Charter</h1>
+                        <h1 class="postcard__title blue"><span className="font-link">Why Aura Airlines Charter</span></h1>
                         <div class="postcard__bar"></div><br/>
                         <div class="postcard__preview-txt">
                             <div class="row">
-                                <div class="col col-md-6">
+                                <div class="col col-md-5"><p class="lh-base">
+                                    <span className="font-link">
                                     <ul>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Island wide coverage</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Anytime, Anywhere</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Available 24/7/365</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Best value for money</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Ensure safety, Security and privacy</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; To fly happily</li>
                                     </ul>
+                                    </span></p>
                                 </div>
-                                <div class="col col-md-6">
+                                <div class="col col-md-7"><p class="lh-base">
+                                    <span className="font-link">
                                     <ul>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Full of comfort, Luxury and convenience</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; To fly happily</li>
+                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Ensure safety, Security and privacy</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Guaranteed safety and our dedication</li>
                                         <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Preeminent and personalized service</li>
                                     </ul>
+                                    </span></p>
                                 </div>
                             </div>
                         </div>
@@ -157,26 +166,28 @@ function Home() {
                 <article class="postcard light blue">
                     <img class="postcard__img" src="offer.jpg" alt="Image Title" />
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue">Safety</h1>
+                        <h1 class="postcard__title blue"><span className="font-link">Safety</span></h1>
                         <div class="postcard__bar"></div><br/>
-                        <div class="postcard__preview-txt">
+                        <div class="postcard__preview-txt"><span className="font-link">
                             Aura Airlines considers safety as its prime consideration and therefore has
                             implemented safety management systems (SMS) throughout our operation both
                             horizontally and vertically.Highly experienced crew will provide extra support
                             with safety ensuring health and personal welfare of our valuable clients.
+                            <br/><br/><br/></span>
                         </div>
                     </div>
                 </article>
                 <article class="postcard light blue">
                     <img class="postcard__img" src="home_1.jpg" alt="Image Title" />
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue">Dedication</h1>
+                        <h1 class="postcard__title blue"><span className="font-link">Dedication</span></h1>
                         <div class="postcard__bar"></div><br/>
-                        <div class="postcard__preview-txt">
+                        <div class="postcard__preview-txt"><span className="font-link">
                             Our product reflects and improves the quality of life with the mission of the airline
                             to make air travel an integral part of the tourism industry and Aura Airlines to be
                             the most flexible, reliable, and safest mode of transport for domestic air travel
                             among tourists, corporate clients, and locals.
+                            <br/><br/><br/></span>
                         </div>
                     </div>
                 </article>

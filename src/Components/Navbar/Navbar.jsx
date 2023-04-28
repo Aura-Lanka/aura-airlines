@@ -35,15 +35,19 @@ function Navbar() {
                         <Link className="nav-link nav-link-color" aria-current="page" to="/About">About Us</Link>
                     </li>
 
-                    <li className="nav-item edit">
+                    {/*<li className="nav-item edit">
                         <Link className="nav-link nav-link-color" aria-current="page" to="/Contact">Contact Us</Link>
-                    </li>
+                </li>*/}
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact Us
+                        <a class="nav-link mx-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact/Inquire
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li className="nav-item edit">
+                                <Link className="nav-link nav-link-color" aria-current="page" to="/Contact">Contact Us</Link>
+                            </li>
+
                             <li className="nav-item edit">
                                 <Link className="nav-link nav-link-color" aria-current="page" to="/Inquire">Inquire Us</Link>
                             </li>

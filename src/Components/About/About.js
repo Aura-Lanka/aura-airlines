@@ -14,27 +14,32 @@ function About() {
     return(
     <>
         <div ref={topContainer} />
-  
-    <div className='About us'>
 
-        {/* <h1 className='tittle-about pb-3 mt-3 text-center'><b>About us</b></h1> */}
-        <div className='margin1'>
-        <img width="100%" height="100%" src="./C01.png" alt="" />
-        <div className='position-absolute img-title'>
-        <h1 className="p-2">Let’s Get to Know About<br/> Aura Airlines</h1>
-        </div>
-        
-        <div className="carousel-caption">
-        {/* <button className="button-img1">Book Now</button> */}
-        </div>
-        </div><br/>
+          <div className='About us'>
+
+            <div
+                id="carouselExampleControls"
+                className="carousel slide  carsouel1-edit"
+                data-bs-ride="carousel"
+                >
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img
+                            src="./mainimg.png"
+                            className="d-block w-100"
+                            alt="..."
+                            />
+                        <div class="tittle-welcome">Let’s Get to Know About<br/> Aura Airlines</div>
+                    </div>
+                </div>
+            </div>
 
 {/*vision & mission start*/}
 
       <div class="wrapper">
         <figure class="card_mi">
           <img class="img_mi" src="https://images.unsplash.com/photo-1579118559062-39e94a22dbb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80" width="100" height="640" alt="" />
-          <figcaption>
+          <figcaption><span className="font-link">
             <blockquote>
               Our Mission
             </blockquote>
@@ -43,14 +48,17 @@ function About() {
               and regulatory requirements in Airline Industry. We are dedicated towards earning customer satisfaction by 
               improving local opportunity, social responsibility, economic and environmental well-being of its stakeholders 
               by diversifying todays airline business requirements.
-            </cite>
+            </cite><br/><br/><br/><br/>
 
             <blockquote>
               Our vision
             </blockquote>
             <cite>
-              To be the leader in business and leisure airline by conquering global skies.
-            </cite>
+              To be the leader in business and leisure airline by conquering global skies. <br/><br/>
+
+              To be the preferred partner in delivering products and services that sustain and enhance our national objectives. 
+              We strive for the upliftment of the environment in which we live and the communities that we operate in.
+            </cite></span>
           </figcaption>
         </figure>
       </div>
@@ -70,12 +78,12 @@ function About() {
 
         <div className='desciritionColor-about '>
 
-        <h3 className='desciritionText-about3'><b>Who We Are</b></h3>
+        <h3 className='desciritionText-about3'><span className="font-link"><b>Who We Are</b></span></h3>
         <div className='borber'>
-        <p className='we-are text-center' >We are a team with excellent service and promised core values.</p>
+        <p className='we-are text-center' ><span className="font-link">We are a team with excellent service and promised core values.</span></p>
         <br />
-        <h2 className='we-core p-1 mr-5'>Core Values</h2>
-        <br />
+        <h2 className='we-core p-1 mr-5'><span className="font-link">Core Values</span></h2>
+        <br /><span className="font-link">
         <ul>
         <li  ><b><strong>Customer first and always right:</strong> Customer is always our priority.</b></li>
         <br />
@@ -86,7 +94,7 @@ function About() {
         <li><b><strong>Achievement:</strong> We thrive for better ways to pursue our customer and employee satisfaction and achieving organisational and personal goals for a secure tomorrow.</b></li>
         <br />
         <li><b><strong>Excellence:</strong> Commitment to do best in all what we do and strive for professional excellence by exceeding expectations to buy out the organisational excellence.</b></li>
-        </ul>
+        </ul></span>
         </div>
         </div>
 
@@ -215,8 +223,15 @@ function About() {
 
                                 <h4 class="m-t-0 m-b-0"><strong>Dr. Viranjith Thambugala</strong></h4>
                                 <div class="job_post">CHAIRMAN</div><br/><br/>
-                                <p className="voice text-center">Success of a human being is really a great news for them as well as for 
-                                    you. Specially for you as it paved a way to go.</p>
+                                <p className="voice text-center">"Enjoy the next level of private flying with our private 
+                                helicopter charter service - Aura Airlines, feel the extraordinary experience. Complete with a 
+                                fleet of AIRBUS Helicopters, AIRBUS approved service facility and a hangar in Ratmalana and highly 
+                                experienced staff, your safety, comfort, privacy and convenience are our top priorities. 
+                                Fly with us to experience the difference and enjoy while being completely at ease about your 
+                                safety. Make every flight personal & assure safe, efficient & reliable solutions to deliver 
+                                superior customers for all stakeholders. Our aim is to provide safe, efficient, high quality 
+                                and integrated utility aircraft services to build infrastructure, and protect people and
+                                property."</p>
                                 <p class="social-icon m-t-5 m-b-0 text-center">
                                     <a title="Twitter" href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
                                     <a title="Facebook" href="javascript:void(0);"><i class="fa fa-facebook"></i></a>

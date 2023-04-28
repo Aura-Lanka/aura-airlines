@@ -21,3 +21,101 @@
     border:2px solid #4568ff;
   }
 
+/***form****/
+
+.contactUs-form{
+  /*padding: 15px 0;*/
+  /*background-color: #3ecd5e;*/
+  }
+    
+.contactUs-form form{
+      /*background-color: #fff;*/
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px ;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      /*box-shadow: 0px 2px 10px #4568ff;*/
+    }
+    
+    .contactUs-form .item{
+    border-radius: 20px;
+      margin-bottom: 25px;
+      padding: 10px 20px;
+    }
+    
+    .contactUs-form .buttonInput{
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #4568ff;
+      border: none;
+      color: white;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 1200px) {
+      .contactUs-form form{
+          padding: 50px 20px;
+          max-width: 800px;
+      }
+    }
+    
+    @media (max-width: 1000px) {
+      .contactUs-form form{
+          padding: 50px 20px;
+          max-width: 750px;
+      }
+    }
+    
+    @media (max-width: 800px) {
+      .contactUs-form form{
+          padding: 50px 20px;
+          max-width: 550px;
+      }
+    }
+    
+    @media (max-width: 750px) {
+      .contactUs-form form{
+          padding: 50px 20px;
+          max-width: 500px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .contactUs-form form{
+          padding: 50px 20px;
+          max-width: 400px;
+      }
+    }
+
+.session {
+display:  flex;
+max-width: 1000px;
+width:  auto; 
+height:  auto; 
+margin:  auto auto; 
+/*background:  #d91616;*/
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+box-shadow: 0px 2px 10px #4568ff; 
+}
+
+.left {
+width:  220px; 
+/*height:  auto; */
+/*min-height:  100%; */
+position:  relative; 
+/*background-color: green;
+background-size:  cover;*/
+border-top-left-radius:  30px; 
+border-bottom-left-radius:  30px;
+box-shadow: 0px 2px 10px #4568ff; 
+}
+
+/****/

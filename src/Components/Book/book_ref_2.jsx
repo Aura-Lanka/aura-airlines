@@ -41,33 +41,13 @@ function Book() {
             .then(res=>{
                 console.log(res.data)
             })
-
-        alert("The form was submitted");
-
-                
-        setData({
-            title:"",
-            first_name:"",
-            last_name:"",
-            country_code:"",
-            phone_number:"",
-            email:"",
-            oneWay:"",
-            roundTrip:"",
-            date:"",
-            departure_city:"",
-            destination_city:"",
-            passengers:""
-          });
-
     }
 
     function handle(e){
         const newdata={...data}
         newdata[e.target.id] = e.target.value
         setData(newdata)
-        /*console.log(newdata)*/
-
+        console.log(newdata)
     }
 
     const topContainer = useRef();
@@ -111,18 +91,9 @@ function Book() {
                         Your browser does not support the video tag.
                 </video> */}
                 {/*<iframe width="100%" height="460" src="https://drive.google.com/uc?id=1-nRbPRxrB6DWlxiny6tK8ndFCr3xnbyl" alt="Google Drive Image" ></iframe>*/}
-                <iframe src="https://drive.google.com/file/d/1-nRbPRxrB6DWlxiny6tK8ndFCr3xnbyl/preview" width="100%" height="540" allow="autoplay" allowfullscreen></iframe>
+                <iframe src="https://drive.google.com/file/d/1-nRbPRxrB6DWlxiny6tK8ndFCr3xnbyl/preview" width="80%" height="540" allow="autoplay" allowfullscreen></iframe>
                 {/*<div class="centered">Fly with Aura Airlines Safely & Happily</div>*/}
                 </div>
-
-
-{/*poster start*/}
-
-        <h3 className="sm-heading text-primary fw-bold">Scheduled Flights</h3>
-
-        <img src="./Aura airline April post -3.png" className="d-block w-100" alt="..." />
-
-{/*poster end*/}
 
                 <h3 className="sm-heading text-primary fw-bold">Tells Us Your Travel Plans</h3>
                 
@@ -133,20 +104,20 @@ function Book() {
 
                 <div className="col-md-7">
                     <div class="registration-form">
-                        <form id="bookForm" onSubmit={(e)=> submit(e)}>
-                            <h5><span className="font-link">Personal Information</span></h5><br />
+                        <form onSubmit={(e)=> submit(e)}>
+                            <h5>Personal Information</h5><br />
                             <div class="form-group">
 
                                     <div className="row">
-                                        <label><span className="font-link">Name<em className="text-danger">*</em></span></label><br />
+                                        <label>Name<em className="text-danger">*</em></label><br /> 
 
-                                        <div className="col-md-2"><span className="font-link">                                     
+                                        <div className="col-md-2">                                     
                                             <select onChange={(e)=>handle(e)} id="title" value={data.title}
                                             name="title" class="form-select item" required>
                                                 <option>Mr</option>
                                                 <option>Ms</option>
                                                 <option>Miss</option>
-                                            </select></span>
+                                            </select>
                                         </div>
 
                                         <div className="col-md-5">
@@ -164,7 +135,7 @@ function Book() {
                             <div class="form-group">
                                 
                                 <div className="row ">
-                                    <label><span className="font-link">Phone Number<em className="text-danger">*</em></span></label><br />
+                                    <label>Phone Number<em className="text-danger">*</em></label><br />
 
                                     <div className="col-md-3">
                                         <input onChange={(e)=>handle(e)} id="country_code" value={data.country_code} 
@@ -185,26 +156,26 @@ function Book() {
                                 </div>*/}
 
                             <div class="form-group">
-                                <label><span className="font-link">Email Address<em className="text-danger">*</em></span></label><br />
+                                <label>Email Address<em className="text-danger">*</em></label><br />
                                 <input onChange={(e)=>handle(e)} id="email" value={data.email}
                                 type="email" email='email' name="email" class="form-control item" placeholder="John@gmail.com"  
                                 oninvalid="this.setCustomValidity('Please Enter valid email')"
                                 oninput="setCustomValidity('')" required/>
                             </div><br />
                             
-                            <h5><span className="font-link">Flight Information</span></h5><br />
+                            <h5>Flight Information</h5><br />
 
                             <div class="form-group">
                                 <label className="px-3"><input onChange={(e)=>handle(e)} id="oneWay" for ="oneWay" value={data.oneWay}
-                                type="radio" className="mx-2" name="flightInfo"/><span className="font-link">One Way</span></label>
+                                type="radio" className="mx-2" name="flightInfo"/>One Way</label>
 
                                 <label className="px-3"><input onChange={(e)=>handle(e)} id="roundTrip" for ="roundTrip" value={data.roundTrip}
-                                type="radio" className="mx-2 " name="flightInfo"/><span className="font-link">Round Trip</span></label>
+                                type="radio" className="mx-2 " name="flightInfo"/>Round Trip</label>
                             </div><br/>
 
                             <div class="form-group">
                                 <div className="col-md-6">
-                                    <label><span className="font-link">Date of Departure<em className="text-danger">*</em></span></label><br />
+                                    <label>Date of Departure<em className="text-danger">*</em></label><br />
                                     <input onChange={(e)=>handle(e)} id="date" value={data.date}
                                     name="date" type="date" class="form-control item" required/>
                                 </div>
@@ -214,7 +185,7 @@ function Book() {
                                 
                                 <div className="row ">
                                     <div className="col-md-6">
-                                        <label><span className="font-link">Departure City<em className="text-danger">*</em></span></label><br />
+                                        <label>Departure City<em className="text-danger">*</em></label><br />
                                         <select onChange={(e)=>handle(e)} id="departure_city" value={data.departure_city}
                                             name="departure_city" class="form-select item" required>
                                             <option>Please Select</option>
@@ -239,7 +210,7 @@ function Book() {
                                     </div>
                                     
                                     <div className="col-md-6">
-                                        <label><span className="font-link">Destination City</span></label><br />
+                                        <label>Destination City</label><br />
                                         <select onChange={(e)=>handle(e)} id="destination_city" value={data.destination_city}
                                             name="destination_city" class="form-select item">
                                             <option>Please Select</option>
@@ -283,14 +254,14 @@ function Book() {
 
                             <div class="form-group">
                                 <div className="col-md-6">
-                                    <label><span className="font-link">No of Passengers</span></label><br />
+                                    <label>No of Passengers</label><br />
                                     <input onChange={(e)=>handle(e)} id="passengers" value={data.passengers}
                                     name='passengers' type="number" class="form-control item" placeholder="0"/>
                                 </div>
                             </div>
                                 
                                 <div className='butt-on d-grid gap-2 col-4 mx-auto'>
-                                <button className='buttonInput' type="submit"><span className="font-link">Submit</span></button>
+                                <button className='buttonInput' id="btn" type="submit">Submit</button>
                                 </div> 
                         
                         </form>
@@ -303,21 +274,22 @@ function Book() {
             {/*Assistance details*/}
 
                 <div className="col-md-4" /*my-auto*/>
-                    <div class="registration2-form">
+                    <div className="book contact1">
 
+                    <h5>For Immediate Assistance</h5><br />
                         <form>
-                            <h5><span className="font-link">For Immediate Assistance</span></h5><br />
-                            <label><span className="font-link">Contact Us</span></label>
-                            <div><i class="fa-solid fa-phone"></i><span className="font-link"> +94 77 907 1437</span></div><br />
+                            <label>Contact Us</label>
+                            <div><i class="fa-solid fa-phone"></i> +94 77 907 1437</div><br />
 
-                            <label><span className="font-link">Email Us</span></label>
-                            <div><i class="fas fa-envelope"></i><span className="font-link"> info@auraairline.com</span></div>
+                            <label>Email Us</label>
+                            <div><i class="fas fa-envelope"></i> info@auraairline.com</div>
                         </form>
-                    </div><br/>
+                    </div>
 
                     <div className="row mx-auto">
                         <div className=""><img className="d-block w-100" src="./safety.png" alt="" /></div>
                     </div>
+
                     
                 </div>
             </div>

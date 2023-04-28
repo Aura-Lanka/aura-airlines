@@ -38,148 +38,146 @@ function Inquire() {
     <>
       <div ref={topContainer}/>
       <div className="Inquire">
-        <div className='inquiry'>
-            <img
-              src="./home_2.png"
-              alt=""
-              width="100%"
-              height="100%"
-            />
-            <h1 className="tittle-Inquire pb-5">
-                <b>Inquire Now</b>
-            </h1>
-        </div><br/>
-
-
-
-        <h3 className="sm-heading text-primary fw-bold">We're With You Always</h3>
-
-        {/*form start*/}
-        
-        <div class="container">
-                <div className="row">
-
-                <div className="col-md-7">
-                    <div className="book contact1">
-                        <form onSubmit={sendEmailContact}>
-                            <label>Name<em className="text-danger">*</em></label>
-                            <div className="row ">
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label>First Name<em className="text-danger">*</em></label><br />
-                                    <input className='b-Input w-100' name='first_name' type="text" required />
-                                </div>
-                            </div>
-
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label>Last Name<em className="text-danger">*</em></label><br />
-                                    <input  className='b-Input w-100' name='last_name'  type="text" required />
-                                </div>
-                            </div>
-
-                            
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label >Email Address<em className="text-danger">*</em></label><br />
-                                    <input  className='b-Input w-100' name='email' type="email" required />
-                                </div>
-                            </div>
-
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label>Subject<em className="text-danger">*</em></label><br />
-                                    <input  className='b-Input w-100' name='subject' type="text" required />
-                                </div>
-                            </div>
-
-                            <div className="col-md-6">
-                                <div className='edit-margin'>
-                                    <label >Message<em className="text-danger">*</em></label><br />
-                                    <textarea  className="b-Input w-100" name='message' cols="30" rows="10" required></textarea>
-                                </div>
-                            </div>
-
-                           
-                            <div className='edit-margin'>
-                              <label>How Do You Wish To Be Reached<em className="text-danger">*</em></label><br />
-                                <label className="px-3"><input id="oneWay" for ="oneWay"
-                                type="radio" className="mx-2" name="flightInfo"/>Call us</label>
-
-                                <label className="px-3"><input id="roundTrip" for ="roundTrip" 
-                                type="radio" className="mx-2 " name="flightInfo"/>Email us</label>
-                            </div>
-                            
-
-                            <div className='edit-margin'>
-                                <div className='butt-on d-grid gap-2 col-4 mx-auto'>
-                                    <button className='buttonInput'>Send</button>
-                                </div>
-                            </div>
-                        </div>
-                        </form>
+      <div
+                id="carouselExampleControls"
+                className="carousel slide  carsouel1-edit"
+                data-bs-ride="carousel"
+                >
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img
+                            src="./mainimg.png"
+                            className="d-block w-100"
+                            alt="..."
+                            />
+                        <div class="tittle-welcome">Inquire Now!</div>
                     </div>
                 </div>
-            {/*form end*/}
+            </div>
 
-            
 
-            {/*Assistance details*/}
+            <h3 className="sm-heading text-primary fw-bold">We're With You Always</h3>
+     
+                {/*form*/}
 
-                <div className="col-md-4" /*my-auto*/>
+                <div class="session ">
+
+                    <div class="left">
+                    <img  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" className="h-100" alt="..." />
+                    </div>
+                    <div class="contactUs-form">
+                    <form onSubmit={sendEmailContact}>
+                        <div class="form-group">
+
+                            <div className="row">
+                                <label>Name<em className="text-danger">*</em></label><br /> 
+
+                                <div className="col-md-2">                                     
+                                    <select  id="title" value=""
+                                    name="title" class="form-select item" required>
+                                        <option>Mr</option>
+                                        <option>Ms</option>
+                                        <option>Miss</option>
+                                    </select>
+                                </div>
+
+                                <div className="col-md-5">
+                                    <input id="first_name" type="text" name="first_name" class="form-control item" placeholder="First Name" required/>
+                                </div>
+
+                                <div className="col-md-5">
+                                    <input id="last_name" type="text" name="last_name" class="form-control item" placeholder="Last Name" required/>
+                                </div>
+                            </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <label >Email Address<em className="text-danger">*</em></label><br />
+                                    <input  class="form-control item" name='email' type="email" placeholder="John@gmail.com" required />
+                                </div>
+
+                                <div className="col-md-6">
+                                    <label>Subject<em className="text-danger">*</em></label><br />
+                                    <input  class="form-control item" name='subject' type="text" placeholder="Please type here..." required />
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label >Message<em className="text-danger">*</em></label><br />
+                                <textarea  class="form-control item" name='message' cols="30" rows="10" placeholder="Please type here..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>How Do You Wish To Be Reached<em className="text-danger">*</em></label><br />
+                                <label className="px-3"><input id="oneWay" for ="oneWay"
+                                    type="radio" className="mx-2" name="flightInfo"/>Call us</label>
+
+                                <label className="px-3"><input id="roundTrip" for ="roundTrip" 
+                                    type="radio" className="mx-2 " name="flightInfo"/>Email us</label>
+                            </div><br />
+                                
+                            <div className='butt-on d-grid gap-2 col-4 mx-auto'>
+                                <button className='buttonInput' id="btn" type="submit">Send</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div><br/>
+
+                {/*form end*/}
+
                 <h2 className="headinng-Inquire p-5 mt-5 text-primary">Sign Up to Our  Newsletter</h2>
 
-                    <div className="book contact1">
+                {/*form 2*/}
 
-                    <h5>We Respect Your Privacy and it's Our Priority</h5><br />
-                        <form>
-                          <div className="edit-margin">
-                            <label>Phone Number<em className="text-danger">*</em></label><br />
-                            <div className="row ">
-                                <div className="col-md-4">
-                                    <input id="country_code" 
-                                    type="text" name="country_code" className="b-Input w-100" placeholder="+94" required/>
-                                </div>
-                                <div className="col-md-8">
-                                    <input  id="phone_number" 
-                                    type="tel" name="phone_number" className="b-Input w-100" placeholder="77+++++++++" required/>
+                <div class="session_2">
+
+                    <div class="left">
+                    <img  src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" className="h-100" alt="..." />
+                    </div>
+                    <div class="contactUs-form">
+                        <form >
+
+                            <h5>We Respect Your Privacy and it's Our Priority</h5><br /><br />
+
+                            <div class="form-group">
+                                
+                                <div className="row ">
+                                    <label>Phone Number<em className="text-danger">*</em></label><br />
+
+                                    <div className="col-md-3">
+                                        <input id="country_code"
+                                        type="text" name="country_code" class="form-control item" placeholder="+94" required/>
+                                    </div>
+
+                                    <div className="col-md-5">
+                                        <input id="phone_number"
+                                        type="tel" name="phone_number" class="form-control item" placeholder="77+++++++++" required/>
+                                    </div>
                                 </div>
                             </div>
 
-                            </div>
-
-                            <div className="edit-margin">
-                                <label>Email Address<em className="text-danger">*</em></label><br />
-                                <input id="email"
-                                type="email" email='email' name="email" className="b-Input w-100" placeholder="John@gmail.com"  
-                                oninvalid="this.setCustomValidity('Please Enter valid email')"
-                                oninput="setCustomValidity('')" required/>
+                            <div class="form-group">
+                                <label >Email Address<em className="text-danger">*</em></label><br />
+                                <input  class="form-control item" name='email' type="email" placeholder="John@gmail.com" required />
                             </div>
 
                             <div className='butt-on d-grid gap-2 col-4 mx-auto'>
-                                <button className='buttonInput' type="submit" >Subscribe</button>
-                                </div> 
+                                <button className='buttonInput' id="btn" type="submit">Subscribe</button>
+                            </div>
+
                         </form>
                     </div>
-                  </div>
-              </div>
-            </div>   
+                </div>
 
-            {/*Assistance details end*/}
+                {/*form 2 end*/}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <h5> </h5>
 
       </div>
       <Footer />
