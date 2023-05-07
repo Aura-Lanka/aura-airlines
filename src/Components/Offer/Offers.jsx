@@ -28,7 +28,7 @@ function Offers() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img
-                            src="./mainimg.png"
+                            src="./mainimg.webp"
                             className="d-block w-100"
                             alt="..."
                             />
@@ -44,7 +44,7 @@ function Offers() {
 	            <div class="row">
 
 		            <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img src="./home_3.png" class="img img-responsive"/>
+                        <div class="profile-card-4 text-center"><img src="./home_3.webp" class="img img-responsive"/>
                             <div class="profile-content">
                                 <div class="profile-description"><span className="font-link">Solid for reduced rates</span></div>
                             </div>
@@ -52,7 +52,7 @@ function Offers() {
                     </div>
 
 		            <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img src="./home_2.png" class="img img-responsive"/>
+                        <div class="profile-card-4 text-center"><img src="./home_2.webp" class="img img-responsive"/>
                             <div class="profile-content">
                                 <div class="profile-description2"><span className="font-link">Usually offer when an Aircraft</span></div>
                                 <div class="profile-description3"><span className="font-link">
@@ -64,7 +64,7 @@ function Offers() {
                     </div>
 
 		            <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img src="./C01.png" class="img img-responsive"/>
+                        <div class="profile-card-4 text-center"><img src="./C01.webp" class="img img-responsive"/>
                             <div class="profile-content">
                                 <div class="profile-description"><span className="font-link">Solely for the benefit of our clients</span></div>
                             </div>

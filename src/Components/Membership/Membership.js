@@ -48,7 +48,7 @@ function Membership() {
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <img
-                                    src="./mainimg.png"
+                                    src="./mainimg.webp"
                                     className="d-block w-100"
                                     alt="..."
                                 />
@@ -173,7 +173,7 @@ function Membership() {
         <p className='desciritionText-Membership' >Membership has it's  Privileges & Last for an Eternity.</p>
     </div>
     <div className='col-md-6'>
-    <img  src="./home_2.png"
+    <img  src="./home_2.webp"
           alt="" 
           width="100%" height="100%" />    
     </div>

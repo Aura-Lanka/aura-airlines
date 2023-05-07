@@ -9,7 +9,7 @@ function Navbar() {
         <nav class="navbar navbar-expand-lg navbar-light bg-info p-3">
             <div class="container-fluid">
                 <Link className="navbar-brand brand-edit" to="/">
-                    <img className="logo-edit" src="./airlogo.png" alt="logo-name" />
+                    <img className="logo-edit" src="./airlogo.webp" alt="logo-name" />
                 </Link>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

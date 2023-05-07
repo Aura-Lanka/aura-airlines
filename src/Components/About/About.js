@@ -25,7 +25,7 @@ function About() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img
-                            src="./mainimg.png"
+                            src="./mainimg.webp"
                             className="d-block w-100"
                             alt="..."
                             />
@@ -105,7 +105,7 @@ function About() {
         <div class='container-services'>
           <div class='card-left'>
             <div class='card-image'>
-              <img src='https://st2.depositphotos.com/2036511/8872/v/950/depositphotos_88723682-stock-illustration-gold-vip-member-rosette.jpg&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+              <img src='https://st2.depositphotos.com/2036511/8872/v/950/depositphotos_88723682-stock-illustration-gold-vip-member-rosette.webp&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
             </div>
             <div class='card-text'>
               <p>Corporate VIP/VVIP Client</p>
@@ -161,7 +161,7 @@ function About() {
           </div>
           <div class='card-bottom'>
             <div class='card-image'>
-              <img src='https://aonehelicopters.com/uploads/595/371/cf/service_images/wa87RBNM3g.jpg&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+              <img src='https://aonehelicopters.com/uploads/595/371/cf/service_images/wa87RBNM3g.webp&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
             </div>
             <div class='card-text'>
               <p>Flower Drops</p>
@@ -177,7 +177,7 @@ function About() {
           </div>
           <div class='card-top'>
             <div class='card-image'>
-              <img src='./wedding_cle.jpg'/>
+              <img src='./wedding_cle.webp'/>
             </div>
             <div class='card-text'>
               <p>Wedding Photography</p>
@@ -217,7 +217,7 @@ function About() {
                         <div class="body">
                             <div class="row">
                                 <div class="profile-image float-md-right"> 
-                                    <img src="./chairman.png" alt=""/> 
+                                    <img src="./chairman.webp" alt=""/> 
                                 </div>
 
                                 <h4 class="m-t-0 m-b-0"><strong>Dr. Viranjith Thambugala</strong></h4>
@@ -257,7 +257,7 @@ function About() {
                         <div class="body">
                             <div class="row">
                                 <div class="profile-image float-md-right"> 
-                                    <img src="./download.jpg" alt=""/> 
+                                    <img src="./download.webp" alt=""/> 
                                 </div>
 
                                 <h4 class="m-t-0 m-b-0"><strong>Thushara Salgado</strong></h4>

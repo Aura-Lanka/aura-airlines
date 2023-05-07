@@ -23,7 +23,7 @@ function Home() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img
-                            src="./home_1.jpg"
+                            src="./home_11.webp"
                             className="d-block w-100"
                             alt="..."
                         />
@@ -31,7 +31,7 @@ function Home() {
                     </div>
                     <div className="carousel-item active">
                         <img
-                            src="./home_2.png"
+                            src="./home_12.webp"
                             className="d-block w-100"
                             alt="..."
                         />
@@ -39,7 +39,7 @@ function Home() {
                     </div>
                     <div className="carousel-item active">
                         <img
-                            src="./home_3.png"
+                            src="./home_13.webp"
                             className="d-block w-100"
                             alt="..."
                         />
@@ -98,7 +98,7 @@ function Home() {
             <div class="container py-2">
 
                 <article class="postcard light blue">
-                    <img class="postcard__img" src="home_3.png" alt="Image Title" />
+                    <img class="postcard__img" src="home_3.webp" alt="Image Title" />
                     <div class="postcard__text t-dark">
                         <h1 class="postcard__title blue"><span className="font-link">Our Services</span></h1>
                         <div class="postcard__bar"></div><br/>
@@ -132,7 +132,7 @@ function Home() {
                     </div>
                 </article>
                 <article class="postcard light blue">
-                    <img class="postcard__img" src="home_2.png" alt="Image Title" />
+                    <img class="postcard__img" src="home_2.webp" alt="Image Title" />
                     <div class="postcard__text t-dark">
                         <h1 class="postcard__title blue"><span className="font-link">Why Aura Airlines Charter</span></h1>
                         <div class="postcard__bar"></div><br/>
@@ -164,7 +164,7 @@ function Home() {
                     </div>
                 </article>
                 <article class="postcard light blue">
-                    <img class="postcard__img" src="offer.jpg" alt="Image Title" />
+                    <img class="postcard__img" src="offer.webp" alt="Image Title" />
                     <div class="postcard__text t-dark">
                         <h1 class="postcard__title blue"><span className="font-link">Safety</span></h1>
                         <div class="postcard__bar"></div><br/>
@@ -178,7 +178,7 @@ function Home() {
                     </div>
                 </article>
                 <article class="postcard light blue">
-                    <img class="postcard__img" src="home_1.jpg" alt="Image Title" />
+                    <img class="postcard__img" src="home_1.webp" alt="Image Title" />
                     <div class="postcard__text t-dark">
                         <h1 class="postcard__title blue"><span className="font-link">Dedication</span></h1>
                         <div class="postcard__bar"></div><br/>
@@ -203,7 +203,7 @@ function Home() {
     <div  className="row article-destination; text-center">
         <div className="col-md-4"> 
             <img 
-                src="https://wallpaper.dog/large/20522603.jpg" 
+                src="/20522603.webp" 
                 alt=""
                 width="100%"
                 height="80%"/>
@@ -211,7 +211,7 @@ function Home() {
         </div>
         <div className="col-md-4">
             <img
-                src="https://wallpaper.dog/large/20522590.jpg" 
+                src="/20522590.webp" 
                 alt=""
                 width="100%"
                 height="80%"/>  
@@ -219,7 +219,7 @@ function Home() {
         </div>
         <div className="col-md-4">
             <img
-                src="https://wallpaper.dog/large/20522582.jpg"
+                src="/20522582.webp"
                 alt=""
                 width="100%"
                 height="80%"/>  

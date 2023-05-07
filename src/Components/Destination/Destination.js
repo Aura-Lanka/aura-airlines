@@ -38,7 +38,7 @@ function Destination() {
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <img
-                                    src="./mainimg.png"
+                                    src="./mainimg.webp"
                                     className="d-block w-100"
                                     alt="..."
                                 />

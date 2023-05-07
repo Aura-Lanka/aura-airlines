@@ -120,7 +120,7 @@ function Book() {
 
         <h3 className="sm-heading text-primary fw-bold">Scheduled Flights</h3>
 
-        <img src="./Aura airline April post -3.png" className="d-block w-100" alt="..." />
+        <img src="./Aura airline April post -3.webp" className="d-block w-100" alt="..." />
 
 {/*poster end*/}
 
@@ -316,7 +316,7 @@ function Book() {
                     </div><br/>
 
                     <div className="row mx-auto">
-                        <div className=""><img className="d-block w-100" src="./safety.png" alt="" /></div>
+                        <div className=""><img className="d-block w-100" src="./safety.webp" alt="" /></div>
                     </div>
                     
                 </div>
@@ -326,9 +326,9 @@ function Book() {
             {/*Assistance details end*/}
 
                 <div className="row mx-auto d-flex justify-content-end">
-                    <div className="col-md-4"><img className="d-block w-100" src="./06-rounded.png" alt="" /></div>
-                    <div className="col-md-4"><img className="d-block w-100" src="./00004-rounded.png" alt="" /></div>
-                    <div className="col-md-4"><img className="d-block w-100" src="./wpimag-rounded.png" alt="" /></div>
+                    <div className="col-md-4"><img className="d-block w-100" src="./06-rounded.webp" alt="" /></div>
+                    <div className="col-md-4"><img className="d-block w-100" src="./00004-rounded.webp" alt="" /></div>
+                    <div className="col-md-4"><img className="d-block w-100" src="./wpimag-rounded.webp" alt="" /></div>
                     {/*<div className="col-md-3"><img className="round-img" src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/6edd37aa-a363-4cb9-a721-3f4f532788dc/Bigstock_+103020331+-+Jet+Set+Power+Lunch.jpg?format=750w" alt="" /></div>*/}
                             </div>
                 
