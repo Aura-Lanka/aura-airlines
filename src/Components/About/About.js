@@ -205,10 +205,9 @@ function About() {
   
         {/*Our services end*/}
 
-        <div className='row descirition margin'>
-        <h3 className='descirition5-about'>Message From Chairman</h3>
-
         {/*chairman profile start*/}
+        <div className=' descirition margin'>
+        <h3 className='descirition5-about'>Message From Chairman</h3>
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
         <div class="container profile-page">
@@ -243,9 +242,62 @@ function About() {
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
+          {/*chairman profile end*/}
+        
+          {/*member profile start*/}
+          <div className=' descirition margin'>
+            <h3 className='descirition5-about'>Message From Board</h3>     
 
-        {/*chairman profile end*/}            
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+            <div class="container profile-page">
+            <div class="row">
+                <div class="">
+                    <div className="card profile-header text-center">
+                        <div class="body">
+                            <div class="row">
+                                <div class="profile-image float-md-right"> 
+                                    <img src="./download.jpg" alt=""/> 
+                                </div>
+
+                                <h4 class="m-t-0 m-b-0"><strong>Thushara Salgado</strong></h4>
+                                <div class="job_post">PILOT / COO / HEAD OF FLIGHT OPERATIONS</div><br/><br/>
+                                <p className="voice text-center">"Aura Airlines makes domestic air travel an integral part 
+                                of the tourism industry and is the most flexible, reliable and safest mode of transport 
+                                for domestic air travel among tourists, corporate clients and locals."
+                                
+                                Highly motivated and qualified, Thushara Salgado is an ICAO CAA ATPL (A)/Sri Lanka and ICAO 
+                                CAA ATPL (H)/Sri Lanka qualified military pilot with a total of 7,600 flying hours. He also 
+                                has 24 years of experience as a helicopter pilot and 05 years experience as a Fixed Wing pilot 
+                                with flying experience ranging in several aircraft such as Bell 412, Bell 212, Bell 206, 
+                                Mi-17, Airbus EC130 helicopters and Y-12, B-200 fixed-wing aircraft. He is also qualified 
+                                under sling and Bambi-Bucket operations and Instrument Rated with 800 flying Hours in un-aided 
+                                night experience. He is a VIP rated pilot in both helicopters and fixed-wing aircraft.
+                                </p>
+                                <p class="social-icon m-t-5 m-b-0 text-center">
+                                    <a title="Twitter" href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a title="Facebook" href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                                    <a title="Instagram" href="javascript:void(0);"><i class="fa fa-instagram "></i></a>
+                                </p>
+                    
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>   
+        
+        
+
+
+
+
+
+          {/*member profile end*/}
+
+        
+                    
         </div>
         </div>
         <Footer/>
