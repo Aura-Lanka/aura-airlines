@@ -30,3 +30,275 @@ h5{
     padding: 30px 40px 10px 40px;
     /* margin-right: 0px; */
 }
+
+.centered {
+    position: absolute;
+    font-size: 40px;
+    color:white;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .book{
+    /*background-color: aqua;*/
+    border:2px solid #4568ff;
+  }
+  
+  @media screen and (max-width: 1421px) {
+    .centered {
+        font-size: 30px;
+      }
+      
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .centered {
+        font-size: 25px;
+      }
+  }
+  
+  @media screen and (max-width: 920px) {
+    .centered {
+        font-size: 20px;
+      }
+  }
+
+  /*******destination offers******/
+
+  .ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+  }
+  
+  .ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 50px 0;
+  }
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+  
+    margin: 0 15px 30px;
+  
+    overflow: hidden;
+  
+    border-radius: 28px;
+  }
+  .ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #c0c0c0;
+  
+    overflow: hidden;
+  
+    position: relative;
+  }
+  .ag-courses-item_link:hover,
+  .ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #161616;
+  }
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  .ag-courses-item_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+  
+    overflow: hidden;
+  
+    font-weight: bold;
+    font-size: 25px;
+    color: #161616;
+    text-align: le;
+  
+    z-index: 2;
+    position: relative;
+  }
+  
+  .ag-courses-item_date-box {
+    font-size: 18px;
+    color: #161616;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+  
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+  }
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 50%;
+  
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+    background-color: #3ecd5e;
+  }
+  .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+    background-color: #e44002;
+  }
+  .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+    background-color: #952aff;
+  }
+  .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+    background-color: #cd3e94;
+  }
+  .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+    background-color: #4c49ea;
+  }
+  
+  @media only screen and (max-width: 979px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+    .ag-courses-item_title {
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+    .ag-courses-item_title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 18px;
+    }
+    .ag-courses-item_link {
+      padding: 22px 40px;
+    }
+    .ag-courses-item_date-box {
+      font-size: 16px;
+    }
+  }
+
+/***form****/
+
+.registration-form{
+padding: 15px 0;
+/*background-color: #3ecd5e;*/
+}
+
+.registration-form form{
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 2px 10px #4568ff;
+}
+
+.registration-form .item{
+border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.registration-form .buttonInput{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4568ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .registration-form form{
+      padding: 50px 20px;
+      max-width: 530px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .registration-form form{
+      padding: 50px 20px;
+      max-width: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .registration-form form{
+      padding: 50px 20px;
+      max-width: 550px;
+  }
+}
+
+@media (max-width: 750px) {
+  .registration-form form{
+      padding: 50px 20px;
+      max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .registration-form form{
+      padding: 50px 20px;
+      max-width: 400px;
+  }
+}
+
+/*****assistance form****/
+
+.registration2-form{
+  padding: 15px 0;
+  /*background-color: #3ecd5e;*/
+  }
+
+.registration2-form form{
+  background-color: #fff;
+  max-width: 350px;
+  margin: auto;
+  padding: 50px 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 2px 10px #4568ff;
+}
+
+
+
+/****poster****/
+

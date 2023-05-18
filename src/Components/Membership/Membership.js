@@ -40,15 +40,116 @@ function Membership() {
       <div ref={topContainer}/>
       <div className="Membership">
           <div className="members position-relative">
-                  <img
-                    src="https://wallpaper.dog/large/20522648.jpg"
-                    alt=""
-                    width="100%"
-                    height="600"
-                  />
-                  <h1 className="img-tittle">For an Extraordinary Fly</h1>
+          <div
+                        id="carouselExampleControls"
+                        className="carousel slide  carsouel1-edit"
+                        data-bs-ride="carousel"
+                    >
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img
+                                    src="./mainimg.webp"
+                                    className="d-block w-100"
+                                    alt="..."
+                                />
+                                <div class="tittle-welcome">For an Extraordinary Fly</div>
+                            </div>
 
-           </div>
+                        </div>
+
+                    </div>
+
+          <div><br/><br/>
+
+        {/*destination offers start*/}
+
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+
+                <div class="ag-courses-item_title text-capitalize">
+                    <span className="font-link">24/7 Dedicated personal advisor</span>
+                </div>
+
+                </p>
+            </div>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+
+                <div class="ag-courses-item_title text-capitalize">
+                    <span className="font-link">Add rates per every travel</span>
+                </div>
+
+                </p>
+            </div>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    <span className="font-link">Free travel for the added rates</span>
+                </div>
+
+                </p>
+            </div>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    <span className="font-link">Get exclusive offers for travels</span>
+                </div>
+        
+                </p>
+            </div>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    <span className="font-link">Lifestyle management</span>
+                </div>
+        
+                </p>
+            </div>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    <span className="font-link">Handling hotel arrangements</span>
+                </div>
+
+                </p>
+            </div>
+        
+            <div class="ag-courses_item">
+                <p class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title text-capitalize">
+                    <span className="font-link">Handling ticket reservations for events</span>
+                </div>
+
+                </p>
+            </div>
+        
+            </div>
+        </div>
+  
+        {/*destination offers end*/}
+
+          </div>
+      </div>
+      {/*
            <div className="container mt-5">
             <div className="card border-secondary">
               <div class="card-body text-secondary">
@@ -63,95 +164,161 @@ function Membership() {
                     </ul>
               </div>
               </div>
-          </div>
+  </div>*/}
         
       <div className="member">       
    
         <div className='row descirition mb-5'>
-    <div className='col-md-6 desciritionTextb-Membership'>
+    <div className='col-md-6 desciritionTextb-Membership; text-center'>
         <p className='desciritionText-Membership' >Membership has it's  Privileges & Last for an Eternity.</p>
     </div>
     <div className='col-md-6'>
-    <img  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="" width="100%" height="500" />    
+    <img  src="./home_2.webp"
+          alt="" 
+          width="100%" height="100%" />    
     </div>
     </div>
     </div>
-    <div className="firstForm-inquire ">
-        <h2 className="headinng-Inquire p-1 m-5">We're with You Always</h2>
-        <div className="inputs-Inquire">
-        <div className="inputInquiry">
-          <form onSubmit={sendMembership} >
-          <h5 className="name-Inquire mt-3 ">Name *</h5>
-         
-          <input
-            className="firstInput-Inquire my-3 "
-            type="text"
-            name="first_name"
-            placeholder="First Name"
-          />
-          <input
-            className="lastInput-Inquire"
-            type="text"
-            name="last_name"
-            placeholder="Last Name"
-          />
-          <br />
-          <h5 className="name-Inquire">Email Address *</h5>
-          <input className="emailInput-Inquire" name='email' type="text" placeholder="" />
-          <br />
-          <h5 className="name-Inquire pt-5">Contact Number *</h5>
-          <input className="emailInput-Inquire" type="text" name='contact_number' placeholder="" required />
-          <br />
-          <br />
-       
 
-          <p className="reached-inquire p-1">How Do You Wish To Be Reached? *</p>
-          <select className="reached-inquire p-1" name="reached" id="">
-            <option value="call us">call us </option>
-            <option value="email">email</option>
-          </select>
+        <h3 className="sm-heading text-primary fw-bold">We're With You Always</h3>
+     
+                {/*form*/}
 
-          <br />
-          <h6 className="hometown">Hometown</h6>
-          <select className="reached-inquire" name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-            <input className="countryInput" type="text" placeholder="" />
-            <p className="reached-inquire pt-5 p-1">How often do you travel?</p>
-            <input className="emptyInput" type="text" placeholder="" />
-            <p className="reached-inquire p-1">What benefits of Membership are you most interested in?</p>
-            <input className="emptyInput" type="text" placeholder="" />
+                <div class="session ">
 
-          <div className=" button-inquire">
-          <button className="buttonin-inquire" >Send</button>
-          </div>
-          </form>
-        </div>
-        </div>
-      </div>
-    
+                    <div class="left">
+                    <img  src="https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" className="h-100" alt="..." />
+                    </div>
+                    <div class="contactUs-form">
+                    <form onSubmit={sendMembership}>
+                        <div class="form-group">
 
-        <h2 className="headinng-Inquire p-5 mt-5">Sign Up to Our  Newsletter</h2>
-        <div className="inputs-Inquire mt-5">
-        <h3 className="headinng0-Inquire p-5">We Respect Your Privacy and  it's  Our Priority</h3>
-        <form onSubmit={sendEmail}>
+                            <div className="row">
+                                <label>Name<em className="text-danger">*</em></label><br /> 
 
-        <h5 className="name-Inquire">Name *</h5>
-          <input className="emailInput-Inquire" name='to_name' type="text" placeholder="" />
-          <br />
-          <h5 className="name-Inquire pt-3">Email Address *</h5>
-          <input className="emailInput-Inquire"  name='email' type="text" placeholder="" />
-          <div className="button-inquire">
-          <button className="buttonin-inquire"> Subscribe </button>
-          {/* <input className="button buttonin-inquire" type='submit' value="Subscribe"></input> */}
-          </div>
+                                <div className="col-md-2">                                     
+                                    <select  id="title" value=""
+                                    name="title" class="form-select item" required>
+                                        <option>Mr</option>
+                                        <option>Ms</option>
+                                        <option>Miss</option>
+                                    </select>
+                                </div>
 
-        </form>
-        </div>
+                                <div className="col-md-5">
+                                    <input id="first_name" type="text" name="first_name" class="form-control item" placeholder="First Name" required/>
+                                </div>
+
+                                <div className="col-md-5">
+                                    <input id="last_name" type="text" name="last_name" class="form-control item" placeholder="Last Name" required/>
+                                </div>
+                            </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                
+                                <div className="row ">
+                                    <label>Phone Number<em className="text-danger">*</em></label><br />
+
+                                    <div className="col-md-3">
+                                        <input id="country_code"
+                                        type="text" name="country_code" class="form-control item" placeholder="+94" required/>
+                                    </div>
+
+                                    <div className="col-md-5">
+                                        <input id="phone_number"
+                                        type="tel" name="phone_number" class="form-control item" placeholder="77+++++++++" required/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label >Email Address<em className="text-danger">*</em></label><br />
+                                <input  class="form-control item" name='email' type="email" placeholder="John@gmail.com" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label>How Do You Wish To Be Reached<em className="text-danger">*</em></label><br />
+                                <label className="px-3"><input id="oneWay" for ="oneWay"
+                                    type="radio" className="mx-2" name="flightInfo"/>Call us</label>
+
+                                <label className="px-3"><input id="roundTrip" for ="roundTrip" 
+                                    type="radio" className="mx-2 " name="flightInfo"/>Email us</label>
+                            </div><br />
+
+                            <div class="form-group">
+                                <label >Hometown</label><br />
+                                <input  class="form-control item" name='text' type="text"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>How often do you travel?</label><br />
+                                <input  class="form-control item" name='text' type="text" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label >What benefits of Membership are you most interested in?</label><br />
+                                <textarea  class="form-control item" name='message' cols="30" rows="10" placeholder="Please type here..."></textarea>
+                            </div>
+                                
+                            <div className='butt-on d-grid gap-2 col-4 mx-auto'>
+                                <button className='buttonInput' id="btn" type="submit">Send</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div><br/>
+
+                {/*form end*/}
+
+                <h2 className="headinng-Inquire p-5 mt-5 text-primary">Sign Up to Our  Newsletter</h2>
+
+                {/*form 2*/}
+
+                <div class="session ">
+
+                    <div class="left">
+                    <img  src="https://images.unsplash.com/photo-1612195745262-89163d541059?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" className="h-100" alt="..." />
+                    </div>
+                    <div class="contactUs-form">
+                        <form >
+
+                            <h5>We Respect Your Privacy and it's Our Priority</h5><br /><br />
+
+                            <div class="form-group">
+                                
+                                <div className="row ">
+                                    <label>Phone Number<em className="text-danger">*</em></label><br />
+
+                                    <div className="col-md-3">
+                                        <input id="country_code"
+                                        type="text" name="country_code" class="form-control item" placeholder="+94" required/>
+                                    </div>
+
+                                    <div className="col-md-5">
+                                        <input id="phone_number"
+                                        type="tel" name="phone_number" class="form-control item" placeholder="77+++++++++" required/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label >Email Address<em className="text-danger">*</em></label><br />
+                                <input  class="form-control item" name='email' type="email" placeholder="John@gmail.com" required />
+                            </div>
+
+                            <div className='butt-on d-grid gap-2 col-4 mx-auto'>
+                                <button className='buttonInput' id="btn" type="submit">Subscribe</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                {/*form 2 end*/}
+
+                <h5> </h5>
 
       </div>
       <Footer />

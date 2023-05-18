@@ -23,3 +23,15 @@
 .all-article h4{
     color: black;
 }
+
+@media screen and (max-width: 568px) {
+    .img-tittle{
+        position: absolute;
+        /*white-space: nowrap;*/
+        top: 2% !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
+        font-size: 30px !important;
+    }
+}

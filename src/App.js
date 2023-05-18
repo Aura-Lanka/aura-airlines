@@ -16,12 +16,13 @@ import Inquire from './Components/Inquire/Inquire';
 
 
 function App() {
+
   return (
     <>
       <Router>
         <Navbar/>
         <Routes>
-
+  
           <Route exact path="/Air" element={<Air/>}/>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/Book" element={<Book/>}/>
@@ -31,7 +32,7 @@ function App() {
           <Route exact path='/Membership' element={<Membership/>}/>
           <Route exact path='/Destination' element={<Destination/>}/>
           <Route exact path='/Inquire' element={<Inquire/>}/>
-
+          
           {/* <Footer /> */}
         </Routes>
         {/* <Switch>
@@ -46,6 +47,7 @@ function App() {
           </Route>
         </Switch> */}
       </Router>
+      
     </>
   );
 }

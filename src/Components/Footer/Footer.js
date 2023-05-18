@@ -86,7 +86,8 @@ function Footer() {
                 <h5 class="font-weight-bold text-uppercase mb-4 p-1">
                   Our Subsidiaries
                 </h5>
-                <p className="mx-3 ">Aura Lanka Gem & Museum</p>
+                {/*<Link to='https://www.facebook.com/' className="mx-3 "><p>Aura Lanka Gem & Museum </p></Link>*/}
+                <p className="mx-3 ">Aura Lanka Gem & Museum </p>
                 <p className="mx-3 ">Aura Lanka Security</p>
                 <p className="mx-3 ">Aura Airlines</p>
                 <p className="mx-3">Aura Lanka Construction</p>
@@ -98,29 +99,29 @@ function Footer() {
 
               <hr class="clearfix w-100 d-md-none" />
 
-              <div class="col-md-2 col-lg-2 text-center mx-auto my-4 ">
+              <div class="col-md-2 col-lg-3 text-center mx-auto my-4 ">
                 <h5 class="font-weight-bold text-uppercase p-1">Contact Info</h5>
 
                 <ul>
                   <li>
                     <p className="mx-auto my-3 ">
-                      <i class="fa-solid fa-phone"></i>+(94)773333966
+                      <i class="fa-solid fa-phone"></i> +94 77 907 1437
                     </p>
                   </li>
                   <li>
                     <p className="mx-auto my-3 ">
-                      <i class="fa-solid fa-user"></i>Dr.Viranjith Thambugala
+                      <i class="fa-solid fa-user"></i> Ruwan Nayanajith - Head of Administrator Sales and Finance
                       <br/>-Chairman
                     </p>
                   </li>
                   <li>
                     <p className="mx-auto my-2">
-                      <i class="fas fa-envelope"></i> info@Auralankaherbals.com
+                      <i class="fas fa-envelope"></i> info@auraairline.com
                     </p>
                   </li>
                   <li>
                     <p className="mx-auto my-3">
-                      <i class="fa-solid fa-map"> </i> 949/13 dawatta RThalangama North,Malabe
+                      <i class="fa-solid fa-map"> </i> 949/13, Udawatte Road, Thalanagama North, Malabe.
                     </p>
                   </li>
                 </ul>
@@ -155,7 +156,7 @@ function Footer() {
           </div>
 
           <div class="footer-copyright text-center py-3">
-            Copyright 2022 By Aura LANKA |All Right Reserved
+          2023 Aura Airline (Pvt) Ltd | All Rights Reserved | This Website is Owned and Managed by Aura Airline (Pvt) Ltd.
           </div>
         </footer>
       </div>
