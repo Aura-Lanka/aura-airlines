@@ -1,185 +1,262 @@
-import React , {useEffect,useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import "../../App.css";
-import Footer from "../Footer/Footer"
-import './Inquire.css';
-import emailjs from 'emailjs-com';
+import Footer from "../Footer/Footer";
+import "./Inquire.css";
+import emailjs from "emailjs-com";
+import {
+  Typography,
+  Button,
+  Box,
+  Grid,
+  TextField,
+  Select,
+  MenuItem,
+  InputLabel,
+  FormControl,
+  TextareaAutosize,
+  Paper,
+  RadioGroup,
+  FormControlLabel,
+  Radio,
+} from "@mui/material";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
 
 function Inquire() {
-
-  const topContainer = useRef();
-  useEffect(() => {
-    topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
-    }, []);
-
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ytqgg7y', 'template_rtao99g', e.target, 'ua3xOIc_sBj-iyTME')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_ytqgg7y",
+        "template_rtao99g",
+        e.target,
+        "ua3xOIc_sBj-iyTME"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
+        }
+      );
+    e.target.reset();
   };
 
   const sendEmailContact = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_la587t8', 'template_rtao99g', e.target, 'LsjBjVjMkntTZqi78')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_la587t8",
+        "template_rtao99g",
+        e.target,
+        "LsjBjVjMkntTZqi78"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
+        }
+      );
+    e.target.reset();
   };
+
+  const rootStyles = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "400px",
+    background: "linear-gradient(to bottom, #536dfe, #2c387e)",
+    color: "#fff",
+    padding: "16px",
+  };
+
+  const headingStyles = {
+    fontSize: "2.5rem",
+    fontWeight: 700,
+    marginBottom: "8px",
+    textAlign: "center",
+  };
+
+  const subheadingStyles = {
+    fontSize: "1.5rem",
+    fontWeight: 500,
+    marginBottom: "16px",
+    textAlign: "center",
+  };
+
+  const buttonStyles = {
+    marginTop: "16px",
+    background: "#fff",
+    color: "#536dfe",
+    borderRadius: "25px",
+    padding: "12px 32px",
+    fontWeight: 600,
+    "&:hover": {
+      background: "#fff",
+      color: "#536dfe",
+    },
+  };
+
   return (
     <>
-      <div ref={topContainer}/>
-      <div className="Inquire">
-      <div
-                id="carouselExampleControls"
-                className="carousel slide  carsouel1-edit"
-                data-bs-ride="carousel"
-                >
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img
-                            src="./mainimg.webp"
-                            className="d-block w-100"
-                            alt="..."
-                            />
-                        <div class="tittle-welcome">Inquire Now!</div>
-                    </div>
-                </div>
-            </div>
-
-
-            <h3 className="sm-heading text-primary fw-bold">We're With You Always</h3>
-     
-                {/*form*/}
-
-                <div class="session ">
-
-                    <div class="left">
-                    <img  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" className="h-100" alt="..." />
-                    </div>
-                    <div class="contactUs-form">
-                    <form onSubmit={sendEmailContact}>
-                        <div class="form-group">
-
-                            <div className="row">
-                                <label>Name<em className="text-danger">*</em></label><br /> 
-
-                                <div className="col-md-2">                                     
-                                    <select  id="title" value=""
-                                    name="title" class="form-select item" required>
-                                        <option>Mr</option>
-                                        <option>Ms</option>
-                                        <option>Miss</option>
-                                    </select>
-                                </div>
-
-                                <div className="col-md-5">
-                                    <input id="first_name" type="text" name="first_name" class="form-control item" placeholder="First Name" required/>
-                                </div>
-
-                                <div className="col-md-5">
-                                    <input id="last_name" type="text" name="last_name" class="form-control item" placeholder="Last Name" required/>
-                                </div>
-                            </div>
-
-                            </div>
-
-                            <div class="form-group">
-
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <label >Email Address<em className="text-danger">*</em></label><br />
-                                    <input  class="form-control item" name='email' type="email" placeholder="John@gmail.com" required />
-                                </div>
-
-                                <div className="col-md-6">
-                                    <label>Subject<em className="text-danger">*</em></label><br />
-                                    <input  class="form-control item" name='subject' type="text" placeholder="Please type here..." required />
-                                </div>
-                            </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label >Message<em className="text-danger">*</em></label><br />
-                                <textarea  class="form-control item" name='message' cols="30" rows="10" placeholder="Please type here..." required></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label>How Do You Wish To Be Reached<em className="text-danger">*</em></label><br />
-                                <label className="px-3"><input id="oneWay" for ="oneWay"
-                                    type="radio" className="mx-2" name="flightInfo"/>Call us</label>
-
-                                <label className="px-3"><input id="roundTrip" for ="roundTrip" 
-                                    type="radio" className="mx-2 " name="flightInfo"/>Email us</label>
-                            </div><br />
-                                
-                            <div className='butt-on d-grid gap-2 col-4 mx-auto'>
-                                <button className='buttonInput' id="btn" type="submit">Send</button>
-                            </div>
-
-                        </form>
-                    </div>
-                </div><br/>
-
-                {/*form end*/}
-
-                <h2 className="headinng-Inquire p-5 mt-5 text-primary">Sign Up to Our  Newsletter</h2>
-
-                {/*form 2*/}
-
-                <div class="session_2">
-
-                    <div class="left">
-                    <img  src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" className="h-100" alt="..." />
-                    </div>
-                    <div class="contactUs-form">
-                        <form >
-
-                            <h5>We Respect Your Privacy and it's Our Priority</h5><br /><br />
-
-                            <div class="form-group">
-                                
-                                <div className="row ">
-                                    <label>Phone Number<em className="text-danger">*</em></label><br />
-
-                                    <div className="col-md-3">
-                                        <input id="country_code"
-                                        type="text" name="country_code" class="form-control item" placeholder="+94" required/>
-                                    </div>
-
-                                    <div className="col-md-5">
-                                        <input id="phone_number"
-                                        type="tel" name="phone_number" class="form-control item" placeholder="77+++++++++" required/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label >Email Address<em className="text-danger">*</em></label><br />
-                                <input  class="form-control item" name='email' type="email" placeholder="John@gmail.com" required />
-                            </div>
-
-                            <div className='butt-on d-grid gap-2 col-4 mx-auto'>
-                                <button className='buttonInput' id="btn" type="submit">Subscribe</button>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-
-                {/*form 2 end*/}
-
-                <h5> </h5>
-
+      <div style={rootStyles}>
+        <Typography variant="h2" style={headingStyles}>
+          We are ready to hear your inquiries
+        </Typography>
+        <Typography variant="h4" style={subheadingStyles}>
+          Inquiry Aura Airlines
+        </Typography>
+        <Button variant="contained" style={buttonStyles}>
+          Discover More
+        </Button>
       </div>
+
+      <Grid
+        container
+        spacing={2}
+        sx={{ marginBottom: "50px", marginTop: "50px" }}
+      >
+        <Grid item xs={1}></Grid>
+        <Grid item xs={7}>
+          <Paper elevation={4} sx={{ margin: 2, padding: 5 }}>
+            <Typography
+              variant="h5"
+              sx={{ fontWeight: "bold", paddingBottom: "20px" }}
+            >
+              Inquiry Aura Airlines
+            </Typography>
+            <FormControl>
+              <Grid container spacing={2}>
+                <Grid item xs={2}>
+                  <TextField
+                    name="title"
+                    id="title"
+                    placeholder="Title"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={5}>
+                  <TextField
+                    name="first_name"
+                    id="first_name"
+                    placeholder="First Name"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={5}>
+                  <TextField
+                    name="last_name"
+                    id="last_name"
+                    placeholder="Last Name"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={6}>
+                  <TextField
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={6}>
+                  <TextField
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    name="message"
+                    id="message"
+                    rows={5}
+                    placeholder="Enter Inquiry Message Here"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={6} sx={{marginBottom: "20px", marginLeft: "2px"}}>
+                  <RadioGroup
+                    name="options"
+                    row
+                  >
+                    <FormControlLabel
+                      value="option1"
+                      control={<Radio />}
+                      label="Call Back"
+                    />
+                    <FormControlLabel
+                      value="option2"
+                      control={<Radio />}
+                      label="Email"
+                    />
+                  </RadioGroup>
+                </Grid>
+              </Grid>
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{ marginTop: "20px" }}
+              >
+                Submit
+              </Button>
+            </FormControl>
+          </Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper elevation={4} sx={{ margin: 2, padding: 5 }}>
+          <Typography
+              variant="h6"
+              sx={{ fontWeight: "bold", paddingBottom: "20px" }}
+            >
+              Sign Up to Our Newsletter
+            </Typography>
+            <FormControl>
+              <Grid container spacing={2}>
+              <Grid item xs={4}>
+                  <TextField
+                    name="country_code"
+                    id="country_code"
+                    placeholder="+94"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={8}>
+                  <TextField
+                    name="phone_number"
+                    id="phone_number"
+                    placeholder="Phone Number"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    style={{ width: "100%", marginBottom: "10px" }}
+                  />
+                </Grid>
+              </Grid>
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{ marginTop: "20px" }}
+              >
+                Subscribe
+              </Button>
+            </FormControl>
+          </Paper>
+        </Grid>
+      </Grid>
+
       <Footer />
     </>
   );

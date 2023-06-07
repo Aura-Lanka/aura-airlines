@@ -1,162 +1,172 @@
-import React , {useEffect,useRef} from "react";
-import './Offers.css';
+import React, { useEffect, useRef } from "react";
+import "./Offers.css";
 import Footer from "../Footer/Footer";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import {
+  Typography,
+  Button,
+  Box,
+  Grid,
+  TextField,
+  Select,
+  MenuItem,
+  InputLabel,
+  FormControl,
+  TextareaAutosize,
+  Paper,
+  RadioGroup,
+  FormControlLabel,
+  Radio,
+  Card,
+  CardContent,
+  CardMedia,
+} from "@mui/material";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
 
 function Offers() {
-    const topContainer = useRef();
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
+  const handleRequestDetails = () => {
+    navigate("/Book");
+  };
 
-    useEffect(() => {
-      topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
-      }, []);
-      
+  const rootStyles = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "400px",
+    background: "linear-gradient(to bottom, #536dfe, #2c387e)",
+    color: "#fff",
+    padding: "16px",
+  };
 
-    const handleRequestDetails =() =>{
-        navigate('/Book');
-    }
+  const headingStyles = {
+    fontSize: "2.5rem",
+    fontWeight: 700,
+    marginBottom: "8px",
+    textAlign: "center",
+  };
 
-    return (
-        <>
-        <div ref={topContainer}/>
-            <div
-                id="carouselExampleControls"
-                className="carousel slide  carsouel1-edit"
-                data-bs-ride="carousel"
-                >
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img
-                            src="./mainimg.webp"
-                            className="d-block w-100"
-                            alt="..."
-                            />
-                        <div class="tittle-welcome">Enjoy our Exclusive Offers</div>
-                    </div>
-                </div>
-            </div>
+  const subheadingStyles = {
+    fontSize: "1.5rem",
+    fontWeight: 500,
+    marginBottom: "16px",
+    textAlign: "center",
+  };
 
+  const buttonStyles = {
+    marginTop: "16px",
+    background: "#fff",
+    color: "#536dfe",
+    borderRadius: "25px",
+    padding: "12px 32px",
+    fontWeight: 600,
+    "&:hover": {
+      background: "#fff",
+      color: "#536dfe",
+    },
+  };
 
-            <h1 className="sm-heading text-primary fw-bold">Offers Are....!!</h1>
+  return (
+    <>
+      <div style={rootStyles}>
+        <Typography variant="h2" style={headingStyles}>
+          Enjoy our Exclusive Offers
+        </Typography>
+        <Typography variant="h4" style={subheadingStyles}>
+          Aura Airlines
+        </Typography>
+        <Button variant="contained" style={buttonStyles}>
+          Discover More
+        </Button>
+      </div>
 
-            <div class="container">
-	            <div class="row">
+      <Box sx={{ padding: "50px" }}>
+        <div className="card_two">
+          <Typography variant="body1" component="blockquote" align="center" sx={{ marginBottom: "20px" }}>
+            Offers Are....!!
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "20px",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card
+              sx={{
+                maxWidth: 300,
+                borderRadius: 2,
+                margin: 2,
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              <CardMedia
+                component="img"
+                src="./C01.webp"
+                alt="Corporate VIP/VVIP Client"
+                sx={{ height: 200, objectFit: "cover" }}
+              />
+              <CardContent>
+                <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
+                  Solid for reduced rates
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card
+              sx={{
+                maxWidth: 300,
+                borderRadius: 2,
+                margin: 2,
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              <CardMedia
+                component="img"
+                src="./C01.webp"
+                alt="Corporate VIP/VVIP Client"
+                sx={{ height: 200, objectFit: "cover" }}
+              />
+              <CardContent>
+                <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
+                  Usually offer when an Aircraft
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ textAlign: "center" }}>
+                  Is landing to pickup passengers <br />
+                  Has to flown empty back to its
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card
+              sx={{
+                maxWidth: 300,
+                borderRadius: 2,
+                margin: 2,
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              <CardMedia
+                component="img"
+                src="./C01.webp"
+                alt="Corporate VIP/VVIP Client"
+                sx={{ height: 200, objectFit: "cover" }}
+              />
+              <CardContent>
+                <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
+                  Solely for the benefit of ours
+                </Typography>
+              </CardContent>
+            </Card>
+          </Box>
+        </div>
+      </Box>
 
-		            <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img src="./home_3.webp" class="img img-responsive"/>
-                            <div class="profile-content">
-                                <div class="profile-description"><span className="font-link">Solid for reduced rates</span></div>
-                            </div>
-	                    </div>
-                    </div>
-
-		            <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img src="./home_2.webp" class="img img-responsive"/>
-                            <div class="profile-content">
-                                <div class="profile-description2"><span className="font-link">Usually offer when an Aircraft</span></div>
-                                <div class="profile-description3"><span className="font-link">
-                                    <li> Is landing to pickup passengers</li>
-                                    <li>Has to flown empty back to its home</li>
-                                </span></div>
-                            </div>
-	                    </div>
-                    </div>
-
-		            <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img src="./C01.webp" class="img img-responsive"/>
-                            <div class="profile-content">
-                                <div class="profile-description"><span className="font-link">Solely for the benefit of our clients</span></div>
-                            </div>
-	                    </div>
-                    </div>
-
-                </div>
-            </div><br/> 
-
-            <div className="book-part2">
-                <div className="table-responsive-sm text-center">
-
-                <table className="table table-bordered text-center">
-                    <thead>
-                        <tr>
-                            <th className="text-center">Type</th>
-                            <th className="text-center">Seats</th>
-                            <th className="text-center">From</th>
-                            <th className="text-center">to</th>
-                            <th className="text-center">Available From</th>
-                            <th className="text-center">Btn</th>
-                        </tr>
-                    </thead>
-
-
-                    <tbody>
-
-                    <tr>
-                    <td colspan="7" class="table-active">Coming Soon!</td>
-                    </tr>
-
-                        {/*Table rows
-
-                        <tr>
-                            <td>a</td>
-                            <td>5</td>
-                            <td>gale</td>
-                            <td>Jaffina</td>
-                            <td>13.02.2023</td>
-                            <td>28.02.2023</td>
-                            <td><button className="buttonInput" 
-                            style={{padding: '3px'}} onClick={handleRequestDetails}> Request Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>b</td>
-                            <td>5</td>
-                            <td>gale</td>
-                            <td>Jaffina</td>
-                            <td>13.02.2023</td>
-                            <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>c</td>
-                            <td>5</td>
-                            <td>gale</td>
-                            <td>Jaffina</td>
-                            <td>13.02.2023</td>
-                            <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>d</td>
-                            <td>5</td>
-                            <td>gale</td>
-                            <td>Jaffina</td>
-                            <td>13.02.2023</td>
-                            <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>e</td>
-                            <td>5</td>
-                            <td>gale</td>
-                            <td>Jaffina</td>
-                            <td>13.02.2023</td>
-                            <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
-                        </tr>
-
-                    rows end*/}
-                    </tbody>
-                    
-                </table>
-                </div>
-            </div>
-
-
-
-
-            <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 }
-export default Offers; 
+export default Offers;

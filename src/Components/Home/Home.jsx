@@ -1,321 +1,339 @@
-import React, {useEffect, useRef} from "react";
-import "./Home.css";
+import React, { useState } from "react";
+import { Carousel } from "react-bootstrap";
+import { Typography, Button, Grid, Paper, Box } from "@mui/material";
 import Footer from "../Footer/Footer";
-import { NavLink } from "react-router-dom";
+import "./Home.css";
 
 function Home() {
-    const topContainer = useRef();
-        useEffect(() => {
-          topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
-          }, []);
+  const images = [
+    {
+      src: "./home_11.jpg",
+      caption: "Welcome To Auralanka Airline",
+    },
+    {
+      src: "./home_12.jpg",
+      caption: "Welcome To Auralanka Airline",
+    },
+    {
+      src: "./home_11.jpg",
+      caption: "Welcome To Auralanka Airline",
+    },
+    {
+      src: "./home_12.jpg",
+      caption: "Welcome To Auralanka Airline",
+    },
+  ];
 
-    return (
-        <div>
-        <div ref={topContainer} />
-            {/* <div className="main-heading">
-                <h1 className="main-heading">Welcome</h1>
-            </div> */}
-            <div
-                id="carouselExampleControls"
-                className="carousel slide  carsouel1-edit"
-                data-bs-ride="carousel"
+  const renderImages = () => {
+    return images.map((image, index) => (
+      <Carousel.Item key={index}>
+        <div className="carousel-image-container">
+          <img className="carousel-image" src={image.src} alt={image.caption} />
+          <div className="carousel-image-overlay"></div>
+          <div className="carousel-caption">
+            <p>{image.caption}</p>
+          </div>
+        </div>
+      </Carousel.Item>
+    ));
+  };
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
+  const imageStyle = {
+    height: "100%",
+    transition: "filter 0.3s",
+  };
+
+  const buttonStyle = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    display: "none",
+    zIndex: 1,
+  };
+
+  const imageList = [
+    { src: "/20522603.webp", alt: "Image Title" },
+    { src: "/20522590.webp", alt: "Image Title" },
+    { src: "/20522582.webp", alt: "Image Title" },
+  ];
+
+  return (
+    <div className="carousel-wrapper">
+      <Carousel>{renderImages()}</Carousel>
+
+      <Grid
+        container
+        justifyContent="center"
+        sx={{
+          marginTop: "100px",
+          marginBottom: "100px",
+          background: "#212121",
+          padding: "50px",
+        }}
+      >
+        <Grid item xs={12}>
+          <Typography
+            variant="body1"
+            align="center"
+            sx={{ boxShadow: 6, p: 2, marginBottom: "20px" }}
+          >
+            <Typography
+              variant="h6"
+              className="font-link"
+              sx={{ color: "white !important" }}
             >
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img
-                            src="./home_11.webp"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                        <div class="tittle-welcome">Welcome to Aura Airlines</div>
-                    </div>
-                    <div className="carousel-item active">
-                        <img
-                            src="./home_12.webp"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                        <div class="tittle-welcome">Welcome to Aura Airlines</div>
-                    </div>
-                    <div className="carousel-item active">
-                        <img
-                            src="./home_13.webp"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                        <div class="tittle-welcome">Welcome to Aura Airlines</div>
-                    </div>
-                </div>
-                <button
-                    className="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev"
+              Aura Airlines is a concept conglomerate in the Airline Industry in
+              Sri Lanka which was founded in 2018 and dedicates its approach
+              mainly to uplift Airline services solely for the benefit of the
+              entire community. Private & Business Airline, as an exclusive
+              platform which customers can benefit from in the fields of
+              Leisure, Corporate and VIP transport solutions, and service for
+              both domestic and international market.
+            </Typography>
+          </Typography>
+          <Grid container justifyContent="center" spacing={2}>
+            <Grid item>
+              <Button variant="contained">
+                <span className="font-link">Inquire Now</span>
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button variant="contained">
+                <span className="font-link">Book Now</span>
+              </Button>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={2} sx={{ marginBottom: "20px" }}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={5}>
+          <Paper elevation={4} sx={{ margin: 2 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={5}>
+                <img
+                  src="home_3.webp"
+                  alt="Image Title"
+                  style={{ height: "320px" }}
+                />
+              </Grid>
+              <Grid item xs={7}>
+                <Typography
+                  className="font-link"
+                  sx={{
+                    fontWeight: "700",
+                    padding: "10px 0 10px 0",
+                    margin: 0,
+                  }}
                 >
-                    <span
-                        className="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button
-                    className="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next"
+                  Our Services
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Corporate VIP/VVIP client
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Passenger charter
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>Leisure</Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Aerial work
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Branding and advertising
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Medical evacuation
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Special events-product launches
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Flower drops
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Banner towing/ Flag displays
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Wedding photography
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Celebrations
+                </Typography>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Grid>
+        <Grid item xs={5}>
+          <Paper elevation={4} sx={{ margin: 2 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={5}>
+                <img
+                  src="home_3.webp"
+                  alt="Image Title"
+                  style={{ height: "320px" }}
+                />
+              </Grid>
+              <Grid item xs={7}>
+                <Typography
+                  className="font-link"
+                  sx={{
+                    fontWeight: "700",
+                    padding: "10px 0 10px 0",
+                    margin: 0,
+                  }}
                 >
-                    <span
-                        className="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div className="text-part container">
-                <p className="text-center container text-part1">
-                <span className="font-link">
-                    Aura Airlines is a concept conglomerate in the Airline Industry in Sri Lanka which was founded in 2018 and dedicates its approach mainly 
-                    to uplift Airline services solely for the benefit of the entire community. Private & Business Airline, as an exclusive platform which customers 
-                    can benefit from in the fields of Leisure, Corporate and VIP transport solutions, and service for both domestic and international market.
-                    </span>
-                </p>
-                <div className="row row-edit  text-center">
-                    <div className="col-md-2 my-auto">
-                        <button className="buttonInput " type="submit" value="Subscribe" >
-                        <span className="font-link">Inquire Now</span>
-                        </button>
-                    </div>
-                    <div className="col-md-2 my-3">
-                        <button className="buttonInput" type="submit" value="Subscribe">
-                        <span className="font-link">Book Now</span>
-                        </button>
-                    </div>
+                  Why Aura Airlines Charter
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Island wide coverage
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Anytime, Anywhere
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Available 24/7/365
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Best value for money
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  To fly happily
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Full of comfort, Luxury and convenience
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Ensure safety, Security and privacy
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Guaranteed safety and our dedication
+                </Typography>
+                <Typography sx={{ padding: 0, margin: 0 }}>
+                  Preeminent and personalized service
+                </Typography>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={2} sx={{ marginBottom: "100px" }}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={5}>
+          <Paper elevation={4} sx={{ margin: 2 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={5}>
+                <img
+                  src="offer.webp"
+                  alt="Image Title"
+                  style={{ height: "320px" }}
+                />
+              </Grid>
+              <Grid item xs={7}>
+                <Typography
+                  className="font-link"
+                  sx={{
+                    fontWeight: "700",
+                    padding: "10px 0 10px 0",
+                    margin: 0,
+                  }}
+                >
+                  Safety
+                </Typography>
+                <Typography sx={{ padding: "0 20px 10px 0", margin: 0 }}>
+                  Aura Airlines considers safety as its prime consideration and
+                  therefore has implemented safety management systems (SMS)
+                  throughout our operation both horizontally and
+                  vertically.Highly experienced crew will provide extra support
+                  with safety ensuring health and personal welfare of our
+                  valuable clients.
+                </Typography>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Grid>
+        <Grid item xs={5}>
+          <Paper elevation={4} sx={{ margin: 2 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={5}>
+                <img
+                  src="offer.webp"
+                  alt="Image Title"
+                  style={{ height: "320px" }}
+                />
+              </Grid>
+              <Grid item xs={7}>
+                <Typography
+                  className="font-link"
+                  sx={{
+                    fontWeight: "700",
+                    padding: "10px 0 10px 0",
+                    margin: 0,
+                  }}
+                >
+                  Dedication
+                </Typography>
+                <Typography sx={{ padding: "0 20px 10px 0", margin: 0 }}>
+                  Our product reflects and improves the quality of life with the
+                  mission of the airline to make air travel an integral part of
+                  the tourism industry and Aura Airlines to be the most
+                  flexible, reliable, and safest mode of transport for domestic
+                  air travel among tourists, corporate clients, and locals.
+                </Typography>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={2} sx={{ marginBottom: "100px" }}>
+        {imageList.map((image, index) => (
+          <Grid item xs={4} key={index}>
+            <Paper elevation={4} sx={{ margin: "10px", position: "relative" }}>
+              <Box
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                style={{ position: "relative" }}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  style={{
+                    ...imageStyle,
+                    filter: hoveredIndex === index ? "brightness(50%)" : "none",
+                  }}
+                />
+                <div
+                  style={{
+                    ...buttonStyle,
+                    display: hoveredIndex === index ? "block" : "none",
+                  }}
+                >
+                  <Button variant="contained">
+                    <span className="font-link">View More</span>
+                  </Button>
                 </div>
-            </div>
+              </Box>
+            </Paper>
+          </Grid>
+        ))}
+      </Grid>
 
-
-        <section class="light">
-            <div class="container py-2">
-
-                <article class="postcard light blue">
-                    <img class="postcard__img" src="home_3.webp" alt="Image Title" />
-                    <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue"><span className="font-link">Our Services</span></h1>
-                        <div class="postcard__bar"></div><br/>
-                        <div class="postcard__preview-txt">
-                            <div class="row">
-                                <div class="col col-md-6"><p class="lh-base">
-                                    <span className="font-link">
-                                    <ul>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Corporate VIP/VVIP client</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Passenger charter</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Leisure</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Aerial work</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Branding and advertising</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Medical evacuation</li>
-                                    </ul>
-                                    </span></p>
-                                </div>
-                                <div class="col col-md-6"><p class="lh-base">
-                                    <span className="font-link">
-                                    <ul>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Special events-product launches</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Flower drops</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Banner towing/ Flag displays</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Wedding photography</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Celebrations</li>
-                                    </ul>
-                                    </span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="postcard light blue">
-                    <img class="postcard__img" src="home_2.webp" alt="Image Title" />
-                    <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue"><span className="font-link">Why Aura Airlines Charter</span></h1>
-                        <div class="postcard__bar"></div><br/>
-                        <div class="postcard__preview-txt">
-                            <div class="row">
-                                <div class="col col-md-5"><p class="lh-base">
-                                    <span className="font-link">
-                                    <ul>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Island wide coverage</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Anytime, Anywhere</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Available 24/7/365</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Best value for money</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; To fly happily</li>
-                                    </ul>
-                                    </span></p>
-                                </div>
-                                <div class="col col-md-7"><p class="lh-base">
-                                    <span className="font-link">
-                                    <ul>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Full of comfort, Luxury and convenience</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Ensure safety, Security and privacy</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Guaranteed safety and our dedication</li>
-                                        <li><i class="fa fa-plane" aria-hidden="true"></i>&nbsp; Preeminent and personalized service</li>
-                                    </ul>
-                                    </span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="postcard light blue">
-                    <img class="postcard__img" src="offer.webp" alt="Image Title" />
-                    <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue"><span className="font-link">Safety</span></h1>
-                        <div class="postcard__bar"></div><br/>
-                        <div class="postcard__preview-txt"><span className="font-link">
-                            Aura Airlines considers safety as its prime consideration and therefore has
-                            implemented safety management systems (SMS) throughout our operation both
-                            horizontally and vertically.Highly experienced crew will provide extra support
-                            with safety ensuring health and personal welfare of our valuable clients.
-                            <br/><br/><br/></span>
-                        </div>
-                    </div>
-                </article>
-                <article class="postcard light blue">
-                    <img class="postcard__img" src="home_1.webp" alt="Image Title" />
-                    <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue"><span className="font-link">Dedication</span></h1>
-                        <div class="postcard__bar"></div><br/>
-                        <div class="postcard__preview-txt"><span className="font-link">
-                            Our product reflects and improves the quality of life with the mission of the airline
-                            to make air travel an integral part of the tourism industry and Aura Airlines to be
-                            the most flexible, reliable, and safest mode of transport for domestic air travel
-                            among tourists, corporate clients, and locals.
-                            <br/><br/><br/></span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-
-{/* Article start */}
-
-
-<h3 className="sm-heading mx-auto pt-5 font-weight-bold display-6">Articles</h3>
-<div>
-    <div  className="row article-destination; text-center">
-        <div className="col-md-4"> 
-            <img 
-                src="/20522603.webp" 
-                alt=""
-                width="100%"
-                height="80%"/>
-            <h4 className="p-1">Article 1</h4>
-        </div>
-        <div className="col-md-4">
-            <img
-                src="/20522590.webp" 
-                alt=""
-                width="100%"
-                height="80%"/>  
-            <h4 className="p-1" v>Article 2</h4>
-        </div>
-        <div className="col-md-4">
-            <img
-                src="/20522582.webp"
-                alt=""
-                width="100%"
-                height="80%"/>  
-            <h4 className="p-1" v>Article 3</h4>
-        </div>
+      <Footer />
     </div>
-    <div className="row row-edit  text-center" >
-        <div className="col-md-2 my-auto">
-            <div className="buttonInput">
-                <NavLink exact to="/Destination" className="readMore">Read More</NavLink>
-            </div>
-        </div>        
-    </div>
-</div><br/>
-
-{/* Articles end */}
-
-{/* carousel start*/}
-
-        <div class="container">
-            <div class="row">
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-none d-lg-block">
-                    <div class="slide-box">
-                        <img src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
-                        <img src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
-                        <img src="https://images.pexels.com/photos/2751667/pexels-photo-2751667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2"/>
-                        <img src="https://images.pexels.com/photos/739409/pexels-photo-739409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3"/>
-                    </div>
-                    </div>
-                    <div class="d-none d-md-block d-lg-none">
-                    <div class="slide-box">
-                        <img src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
-                        <img src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
-                        <img src="https://images.pexels.com/photos/2751667/pexels-photo-2751667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2"/>
-                    </div>
-                    </div>
-                    <div class="d-none d-sm-block d-md-none">
-                    <div class="slide-box">
-                        <img src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
-                        <img src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
-                    </div>
-                    </div>
-                    <div class="d-block d-sm-none">
-                    <img class="d-block w-100" src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="0"/>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-none d-lg-block">
-                    <div class="slide-box">
-                        <img src="https://images.pexels.com/photos/6045035/pexels-photo-6045035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="4"/>
-                        <img src="https://images.pexels.com/photos/5042817/pexels-photo-5042817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="5"/>
-                        <img src="https://images.pexels.com/photos/6840389/pexels-photo-6840389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="6"/>
-                        <img src="https://images.pexels.com/photos/4403902/pexels-photo-4403902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="7"/>
-                    </div>
-                    </div>
-                    <div class="d-none d-md-block d-lg-none">
-                    <div class="slide-box">
-                        <img src="https://images.pexels.com/photos/739409/pexels-photo-739409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3"/>
-                        <img src="https://images.pexels.com/photos/6045035/pexels-photo-6045035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="4"/>
-                        <img src="https://images.pexels.com/photos/5042817/pexels-photo-5042817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="5"/>
-                    </div>
-                    </div>
-                    <div class="d-none d-sm-block d-md-none">
-                    <div class="slide-box">
-                        <img src="https://images.pexels.com/photos/2751667/pexels-photo-2751667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2"/>
-                        <img src="https://images.pexels.com/photos/739409/pexels-photo-739409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3"/>
-                    </div>
-                    </div>
-                    <div class="d-block d-sm-none">
-                    <img class="d-block w-100" src="https://images.pexels.com/photos/4403893/pexels-photo-4403893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"/>
-                    </div>
-                </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-                </a>
-            </div>
-            </div>
-        </div>
-
-{/* carousel end*/}
-
-            <Footer />
-        </div>
-    );
+  );
 }
+
 export default Home;

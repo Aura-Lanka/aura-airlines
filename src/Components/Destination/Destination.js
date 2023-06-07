@@ -1,77 +1,98 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../../App.css";
-import './Destination.css'
-import Footer from "../Footer/Footer"
+import "./Destination.css";
+import Footer from "../Footer/Footer";
 import Image from "../../Image";
+import {
+  Typography,
+  Button,
+  Box,
+  Grid,
+  TextField,
+  Select,
+  MenuItem,
+  InputLabel,
+  FormControl,
+  TextareaAutosize,
+  Paper,
+  RadioGroup,
+  FormControlLabel,
+  Radio,
+} from "@mui/material";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
 
 function Destination() {
+  const [images, setImages] = useState([]);
 
-        const topContainer = useRef();
-        useEffect(() => {
-          topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
-          }, []);
+  useEffect(() => {
+    const fetchImages = async () => {
+      const response = await fetch(
+        `https://api.unsplash.com/photos?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
+      );
+      const data = await response.json();
+      setImages(data);
+      console.log(data);
+    };
 
-        const [images, setImages] = useState([])
+    fetchImages();
+  }, []);
 
-        useEffect(() => {
-                const fetchImages = async ()=> {
-                        const response = await fetch(`https://api.unsplash.com/photos?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
-                        const data = await response.json()
-                        setImages(data)
-                        console.log(data)
-                }
+  const rootStyles = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "400px",
+    background: "linear-gradient(to bottom, #536dfe, #2c387e)",
+    color: "#fff",
+    padding: "16px",
+  };
 
-                fetchImages()
-        }, [])
+  const headingStyles = {
+    fontSize: "2.5rem",
+    fontWeight: 700,
+    marginBottom: "8px",
+    textAlign: "center",
+  };
 
-    return(
-        <>
-        <div ref={topContainer} />
+  const subheadingStyles = {
+    fontSize: "1.5rem",
+    fontWeight: 500,
+    marginBottom: "16px",
+    textAlign: "center",
+  };
 
-        <div className="Destination">
-        <div className='position-relative'>
-                    <div
-                        id="carouselExampleControls"
-                        className="carousel slide  carsouel1-edit"
-                        data-bs-ride="carousel"
-                    >
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img
-                                    src="./mainimg.webp"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                                <div class="tittle-welcome">Fly with Us to<br/>Amazing Destinations</div>
-                            </div>
+  const buttonStyles = {
+    marginTop: "16px",
+    background: "#fff",
+    color: "#536dfe",
+    borderRadius: "25px",
+    padding: "12px 32px",
+    fontWeight: 600,
+    "&:hover": {
+      background: "#fff",
+      color: "#536dfe",
+    },
+  };
 
-                        </div>
-                </div>
-        </div>
+  return (
+    <>
+      <div style={rootStyles}>
+        <Typography variant="h2" style={headingStyles}>
+          Fly with Us to Amazing Destinations
+        </Typography>
+        <Typography variant="h4" style={subheadingStyles}>
+          Our Blog - Aura Airlines
+        </Typography>
+        <Button variant="contained" style={buttonStyles}>
+          Discover More
+        </Button>
+      </div>
 
-        {!images ? <h2 className="flex item-center justify-center h-screen font-bold text-4xl
-        text-center text-slate-800">Loading....</h2> :
-                <section className="px-5 container mx-auto">
-                        <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl my-10 
-                        lg:mt-20 lg:mb-16 text-slate-800 capitalize">Sample Articles</h1>
-
-                        <div class="container">
-                        <div class="row">
-                        <div className="col-md-4">
-                            {images.map((image) => (
-                                <Image key={image.id} {...image} />
-                            ))}     
-                        </div>
-                        </div>
-                        </div>
-
-                </section>
-        }
-
-        </div>
-        <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  );
 }
 
 export default Destination;

@@ -1,88 +1,137 @@
 import React from "react";
-import './Navbar.css';
 import { Link } from "react-router-dom";
+import { AppBar, Toolbar, Typography, Button, IconButton, useMediaQuery, Menu, MenuItem } from "@mui/material";
+import { Home, Book, Info, Menu as MenuIcon, YouTube, Twitter, Facebook } from "@mui/icons-material";
+import { styled } from "@mui/system";
 
+const Nav = styled(AppBar)(({ theme }) => ({
+  backgroundColor: "#212121",
+}));
 
-function Navbar() {
-    return (
-        <>     
-        <nav class="navbar navbar-expand-lg navbar-light bg-info p-3">
-            <div class="container-fluid">
-                <Link className="navbar-brand brand-edit" to="/">
-                    <img className="logo-edit" src="./airlogo.webp" alt="logo-name" />
-                </Link>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto ">
+const Brand = styled("div")(({ theme }) => ({
+  marginRight: theme.spacing(2),
+  "& img": {
+    height: "60px",
+    width: "auto",
+  },
+}));
 
-                    <li className="nav-item">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="/">Home</Link>
-                    </li>
+const NavLink = styled(Button)(({ theme }) => ({
+  color: theme.palette.common.white,
+  textDecoration: "none",
+  "&:hover": {
+    color: "#BDBDBD",
+  },
+}));
 
-                    <li className="nav-item">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="/Book">Book</Link>
-                    </li>
+const SocialIcon = styled(IconButton)(({ theme }) => ({
+  color: theme.palette.common.white,
+  marginLeft: theme.spacing(1),
+}));
 
-                    {/*<li className="nav-item">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="/Air">Aircraft Guide</Link>
-                    </li>*/}
+const Navbar = () => {
 
-                    <li className="nav-item edit">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="/About">About Us</Link>
-                    </li>
+    const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const handleMenuClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
 
-                    {/*<li className="nav-item edit">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="/Contact">Contact Us</Link>
-                </li>*/}
+  return (
+    <Nav position="static">
+      <Toolbar>
+        <Brand>
+          <Link to="/">
+            <img src="./airlogo.webp" alt="logo-name" />
+          </Link>
+        </Brand>
+        {isSmallScreen ? (
+            <>
+                <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
+                <MenuItem onClick={handleClose} component={Link} to="/">
+                    Home
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/Book">
+                    Book
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/About">
+                    About
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/Contact">
+                    Contact
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/Inquire">
+                    Inquire
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/Membership">
+                    Membership
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/Destination">
+                    Destination
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/Offers">
+                    Offers
+                </MenuItem>
+                </Menu>
+                <SocialIcon href="" target="_blank" rel="noopener noreferrer">
+                    <YouTube />
+                </SocialIcon>
+                <SocialIcon href="" target="_blank" rel="noopener noreferrer">
+                    <Twitter />
+                </SocialIcon>
+                <SocialIcon href="" target="_blank" rel="noopener noreferrer">
+                    <Facebook />
+                </SocialIcon>
+                <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleMenuClick} sx={{ marginLeft: "auto" }}>
+                    <MenuIcon />
+                </IconButton>
+            </>
+          ) : (
+            <>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 , fontWeight: 600}}>
+                    Auralanka Airline
+                </Typography>
+                <NavLink color="inherit" component={Link} to="/">
+                    Home
+                </NavLink>
+                <NavLink color="inherit" component={Link} to="/Book">
+                    Book
+                </NavLink>
+                <NavLink color="inherit" component={Link} to="/About">
+                    About
+                </NavLink>
+                <NavLink color="inherit" component={Link} to="/Contact">
+                    Contact
+                </NavLink>
+                <NavLink color="inherit" component={Link} to="/Inquire">
+                    Inquire
+                </NavLink>
+                <NavLink color="inherit" component={Link} to="/Membership">
+                    Membership
+                </NavLink>
+                <NavLink color="inherit" component={Link} to="/Destination">
+                    Destination
+                </NavLink>
+                <NavLink color="inherit" component={Link} to="/Offers">
+                    Offers
+                </NavLink>
+                <SocialIcon href="" target="_blank" rel="noopener noreferrer">
+                    <YouTube />
+                </SocialIcon>
+                <SocialIcon href="" target="_blank" rel="noopener noreferrer">
+                    <Twitter />
+                </SocialIcon>
+                <SocialIcon href="" target="_blank" rel="noopener noreferrer">
+                    <Facebook />
+                </SocialIcon>
+            </>
+          )}
+      </Toolbar>
+    </Nav>
+  );
+};
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact/Inquire
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li className="nav-item edit">
-                                <Link className="nav-link nav-link-color" aria-current="page" to="/Contact">Contact Us</Link>
-                            </li>
-
-                            <li className="nav-item edit">
-                                <Link className="nav-link nav-link-color" aria-current="page" to="/Inquire">Inquire Us</Link>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li className="nav-item edit">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="/Membership">Membership</Link>
-                    </li>
-
-                    <li className="nav-item edit">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="Destination">Destinations</Link>
-                    </li>
-
-                    <li className="nav-item edit">
-                        <Link className="nav-link nav-link-color" aria-current="page" to="/Offers">Offers</Link>
-                    </li>
-
-
-                </ul>
-                <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
-                    <li class="nav-item mx-2">
-                    <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-youtube-square"></i></a>
-                    </li>
-                    <li class="nav-item mx-2">
-                    <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="nav-item mx-2">
-                    <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-        </>
-    );
-}
 export default Navbar;

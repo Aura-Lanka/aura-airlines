@@ -362,6 +362,7 @@ a {
     var(--indent) calc(3 * var(--indent)) 1fr calc(2 * var(--indent))
     var(--indent);
   max-width: 100%;
+  padding-right: 2rem;
   /*height: 800px;*/
 }
 
@@ -376,10 +377,21 @@ a {
   box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.1);
 }
 
+.card_two {
+  box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.1);
+  padding: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card_two blockquote {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
 .card_mi::after {
   content: "";
   display: block;
-  background: #e0dde4;
   grid-column: 1/-2;
   grid-row: 1/-2;
   z-index: -1;
@@ -405,14 +417,14 @@ a {
   margin: 0;
   padding-bottom: 1rem;
   /* font-size: clamp(2rem, 2.5vw, 3rem); */
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
   align-self: flex-end;
 }
 
 .card_mi cite {
   grid-column: 1/2;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 100;
   font-style: normal;
 }

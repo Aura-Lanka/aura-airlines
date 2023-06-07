@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Layout from '../containers/Layout'
-import Air from './Components/Air/Air';
+import { CssBaseline } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from './Components/Navbar/Navbar';
-// import Footer from './Footer';
+import Air from './Components/Air/Air';
 import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
@@ -14,41 +13,27 @@ import Destination from './Components/Destination/Destination';
 import Membership from './Components/Membership/Membership';
 import Inquire from './Components/Inquire/Inquire';
 
+const theme = createTheme();
 
 function App() {
-
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
-  
-          <Route exact path="/Air" element={<Air/>}/>
-          <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/Book" element={<Book/>}/>
-          <Route exact path="/Contact" element={<Contact/>}/>
-          <Route exact path="/Offers" element={<Offers/>}/>
-          <Route exact path='/About' element={<About/>}/>
-          <Route exact path='/Membership' element={<Membership/>}/>
-          <Route exact path='/Destination' element={<Destination/>}/>
-          <Route exact path='/Inquire' element={<Inquire/>}/>
-          
-          {/* <Footer /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/Air" element={<Air />} />
+          <Route path="/Book" element={<Book />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Offers" element={<Offers />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Membership" element={<Membership />} />
+          <Route path="/Destination" element={<Destination />} />
+          <Route path="/Inquire" element={<Inquire />} />
         </Routes>
-        {/* <Switch>
-          <Route  path="/">
-              <Home/>
-          </Route>
-          <Route  path="<Book/>">
-              <Book/>
-          </Route>
-          <Route  path="">
-              <Air/>
-          </Route>
-        </Switch> */}
       </Router>
-      
-    </>
+    </ThemeProvider>
   );
 }
 
