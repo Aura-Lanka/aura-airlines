@@ -25,7 +25,10 @@ function Book() {
         <>
       <div ref={topContainer}/>
 
+      
+
             <div>
+                
                 <div className="video-edit" >
 
                 {/* <video width="100%" height="460" controls>
@@ -33,8 +36,7 @@ function Book() {
                     <source src="https://www.youtube.com/watch?v=ZbIzZD_YNsA" type="video/ogg"/>
                         Your browser does not support the video tag.
                 </video> */}
-                <iframe width="100%" height="460" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
+                <iframe width="100%" height="460" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="youtube"></iframe>
                 </div>
                 <h3 className="sm-heading">Tells Us Your Travel Plans</h3>
                 

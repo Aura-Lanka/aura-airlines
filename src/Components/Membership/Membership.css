@@ -1,45 +1,32 @@
-.member{
-    margin: 80px;
+.page-header_member {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url("/public/img/Choose.jpg");
+    background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.img-tittle{
-    position: absolute;
-    top: 9%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
-    font-size: 60px;
+
+.category img,
+.course-item img {
+    transition: .5s;
 }
-.circle-membership{
-    color: white;
-    line-height: 2;
-    position: absolute;
-    top: 70%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    font-family: 'Times New Roman', Times, Helvetica, sans-serif !important;
-    font-weight: bold;
+
+.category a:hover img,
+.course-item:hover img {
+    transform: scale(1.1);
 }
-.firstForm-inquire{
-    margin: auto;
-}
-.inputs-Inquire{
-    margin: auto;
-    width: 60%;
-}
-.inputInquiry{
-    margin: 10px 40px;
-}
-.container .card{
- margin-top: 50px;
- margin-bottom: 20px;
- -webkit-box-shadow: -4px 8px 13px 5px #A2A2A2; 
-    box-shadow: -4px 8px 13px 5px #A2A2A2;
-}
-.container .border-secondary{
-    /* width: 40%; */
-}
-.container .border-secondary ul li{
-    font-weight: bold;
-    line-height: 2;
-    font-size: 15px;
+
+.subscribe_section{
+    background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url("/public/img/Choose.jpg");
+    background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

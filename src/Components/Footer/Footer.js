@@ -25,6 +25,7 @@ function Footer() {
                     src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d7921.855178098111!2d79.9475817!3d6.8992638!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ae250cc8213779f%3A0x4624ec10005649e3!2s949%20Udawatta%20Road%20Malabe!3m2!1d6.899104899999999!2d79.947553!5e0!3m2!1sen!2slk!4v1663602628626!5m2!1sen!2slk"
                     width="600"
                     height="120"
+                    title="google_map"
                   ></iframe>
                 </div>
               </div>
